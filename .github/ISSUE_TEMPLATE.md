@@ -1,18 +1,16 @@
 ## Background
-[Description of feature]
+**Task:**
 
-## Figma Mockups
-Product Designer contact: 
+## Mockups
 [Figma Mockup](link-here)
 
-### Screenshots:
+**Desktop**
 
-## Code Pointers
-[Description of files to work on]
+**Mobile**
+
+## Relevant Files
 
 ### Props to expect
 
 ## Additional context
-[Add any other context about the feature request]
-
 [what branch associate should base their branches off of]
