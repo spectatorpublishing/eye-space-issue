@@ -1,4 +1,4 @@
-export const city_news_articles = [
+export const lenape_articles = [
     {
       "article_link": "https://www.columbiaspectator.com/news/2022/08/23/despite-rise-in-media-coverage-local-crime-remains-relatively-low/",
       "article_title": "Despite rise in media coverage, local crime remains relatively low",
@@ -25,7 +25,7 @@ export const city_news_articles = [
     }
   ];
 
-export const uni_news_articles = [
+export const columbia_articles = [
     {
       "article_link": "https://www.columbiaspectator.com/news/2022/08/18/columbia-to-offer-dual-masters-degrees-in-business-administration-engineering/",
       "article_title": "Columbia to offer dual master's degrees in business administration, engineering",
@@ -76,7 +76,7 @@ export const uni_news_articles = [
     }
   ];
 
-export const a_and_e_articles = [
+export const off_campus_articles = [
     {
       "article_link": "https://www.columbiaspectator.com/arts-and-entertainment/2022/08/18/theres-a-new-rivr-flowingand-its-on-your-phone/",
       "article_title": "There's a new RivR flowing—and it's on your phone",
@@ -109,7 +109,7 @@ export const a_and_e_articles = [
     }
   ];
 
-export const opinion_articles = [
+export const present_day_articles = [
     {
       "article_link": "https://www.columbiaspectator.com/opinion/2022/08/19/if-barnard-responds-to-the-challenge-of-the-womens-movement-then-where-are-our-abortion-pills/",
       "article_title": "If Barnard “responds to the challenge of the women's movement,” then where are our abortion pills?",
@@ -141,78 +141,3 @@ export const opinion_articles = [
       "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/OEUGV4DXWBFD5INECWCVYI6SYE.JPG"
     }
   ];
-
-export const eye_articles = [
-    {
-      "article_link": "https://www.columbiaspectator.com/the-eye/2022/08/22/running-up-a-downwards-escalator/",
-      "article_title": "Running Up a Downwards Escalator",
-      "article_authors": "Kiana Mottahedan",
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/the-eye/2022/08/22/chinese-school-feeling-lost-in-a-culture-i-was-supposed-to-know/",
-      "article_title": "Chinese School: Feeling Lost In a Culture I Was Supposed to Know",
-      "article_authors": "Joyce Zhang",
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/the-eye/2022/08/22/a-picture-perfect-memory-looking-back-at-alma-mater/",
-      "article_title": "A Picture-Perfect Memory: Looking Back at Alma Mater",
-      "article_authors": "Manan Vij",
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/the-eye/2022/08/22/losing-a-nickname-from-friend-to-distant-aunt/",
-      "article_title": "Losing a Nickname: From Friend to Distant Aunt",
-      "article_authors": "Roni Gal-Oz",
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/the-eye/2022/08/23/into-a-new-infinity-beginnings-strangers-and-the-class-of-2026-instagram-page/",
-      "article_title": "Into a new infinity: beginnings, strangers, and the Class of 2026 Instagram Page",
-      "article_authors": "William Park",
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/the-eye/2022/08/23/the-debate-over-roe-v-wade-in-the-us-a-look-back-on-years-of-spectator-insights/",
-      "article_title": "The Debate Over Roe v. Wade in the US: A Look Back on Years of Spectator Insights",
-      "article_authors": "Matthieu Le",
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/the-eye/2022/08/23/goodbye-yellow-brick-road/",
-      "article_title": "Goodbye, Yellow Brick Road",
-      "article_authors": "Olya Sukonrat",
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/the-eye/2022/08/23/big-sur-where-i-learned-to-say-amen/",
-      "article_title": "Big Sur: Where I Learned to Say ‘Amen'",
-      "article_authors": "Julianna Lozada",
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/the-eye/2022/08/23/call-me-by-my-two-names/",
-      "article_title": "Call Me by My Two Names",
-      "article_authors": "Linda Qu",
-    }
-  ];
-
-export const sports_articles = [
-    {
-      "article_link": "https://www.columbiaspectator.com/sports/2022/08/20/what-you-missed-from-columbia-athletes-this-summer/",
-      "article_title": "What you missed from Columbia athletes this summer",
-      "article_authors": "Heather Chen",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/FQVY7MZOS5BMTEDZWXZGFTTF6U.jpg"
-    }
-  ];
-
-export const illustrations = [
-    {
-        image_url: "https://summer-fellowship-2022.s3.amazonaws.com/mainImage.jpeg",
-        article_authors: "Ainhoa Petri-Hidalgo, Ena Selman-Housein, and Yingjie Wang",
-        article_link: "https://summerfellowship2022.columbiaspectator.com/"
-    },
-    {
-        image_url: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/JY4EQCPCIZA4JD3ASOZYSPQEA4.gif",
-        article_authors: "Ainhoa Petri-Hidalgo",
-        article_link: "https://www.columbiaspectator.com/eye/"
-    },
-    {
-        image_url: "https://summer-fellowship-2022.s3.amazonaws.com/KXLZTM6OM5GRXDKHLILAV3BWAU.gif",
-        article_authors: "Ena Selman-Housein",
-        article_link: "https://www.columbiaspectator.com/"
-    }
-];
