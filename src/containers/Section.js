@@ -5,23 +5,40 @@ import theme from '../theme';
 const Section = ({articles, header}) => {
 
     return(
-        <main>
-            <div>{header}</div>
-        </main>
+        <Wrapper>
+            <Map><p>{header} map goes here</p></Map>
+            <Articles>
+                {articles.map(article => (
+                    <p>{article.article_title}</p>
+                ))}
+            </Articles>
+        </Wrapper>
     );
 };
 
 export default Section;
 
-const Mobile = styled.div`
+const Wrapper = styled.main`
     display: flex;
-    @media (min-width: 769px) {
-        display: none;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
     }
 `;
 
-const Desktop = styled.div`
+const Map = styled.div`
+    width: 90%;
+
     @media (max-width: 768px) {
-        display: none;
+        width: 100vw;
+    }
+`;
+
+const Articles = styled.div`
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        flex-direction: row;
     }
 `;
