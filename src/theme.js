@@ -18,7 +18,8 @@ const theme = {
       menuItemPrimary: "#ECCBC1",
       menuItemSecondary: "#D4B4AB",
       menuItemPrimaryMobile: "#8094A9",
-      articleTitleBlue: "#698FC9"
+      articleTitleBlue: "#698FC9",
+      titleBlack: "#4A2513",
     },
     sizes: {
       mobile: "767px",
