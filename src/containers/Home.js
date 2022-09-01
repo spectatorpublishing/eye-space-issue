@@ -8,8 +8,11 @@ import Credits from '../components/Credits';
 import theme from '../theme';
 
 const HomeContainer = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: ${theme.colors.lightBrown};
     @media only screen and (max-width: 768px){
-
     }
 `;
 

@@ -20,6 +20,7 @@ const theme = {
       menuItemPrimaryMobile: "#8094A9",
       articleTitleBlue: "#698FC9",
       titleBlack: "#4A2513",
+      lightBrown: "#EEE7DF",
     },
     sizes: {
       mobile: "767px",
