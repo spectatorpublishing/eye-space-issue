@@ -8,6 +8,7 @@ import Credits from '../components/Credits';
 import theme from '../theme';
 
 const HomeContainer = styled.div`
+    background-color: ${theme.colors.lightBrown};
     @media only screen and (max-width: 768px){
 
     }
