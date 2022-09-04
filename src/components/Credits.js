@@ -22,6 +22,10 @@ const Title = styled.div`
     font-weight: 400;
     font-size: 3rem;
     text-align: center;
+    @media only screen and (max-width: 768px){
+        font-weight: 400;
+        font-size: 2rem;
+    }
 `;
 
 const CreditsTitle = styled.div`
@@ -61,6 +65,10 @@ const Row = styled.div`
 
 const SubDiv = styled.div`
     width: 30%;
+    @media only screen and (max-width: 768px){
+        width: 60%;
+        padding-left: 20%;
+    }
 `;
 
 const Credits = ({ }) => {
@@ -84,8 +92,6 @@ const Credits = ({ }) => {
                         <h2>Corporate Board</h2>
                         <p>Name 1</p>
                     </SubDiv>
-                </Row>
-                <Row>
                     <SubDiv>
                         <h2>Corporate Board</h2>
                         <p>Name 1</p>
