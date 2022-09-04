@@ -9,7 +9,10 @@ const PLACEHOLDER = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nu
 
 const Container = styled.div`
     width: 100%;
+    display: flex;
     flex-direction: column;
+    border-top: 2px solid ${theme.colors.darkBrown};
+    border-bottom: 2px solid ${theme.colors.darkBrown};
     @media only screen and (max-width: ${theme.sizes.mobile}){
     }
 `;
@@ -19,7 +22,7 @@ const TitleContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    color: ${theme.colors.titleBlack};
+    color: ${theme.colors.darkBrown};
     @media only screen and (max-width: ${theme.sizes.mobile}){
         padding: 1rem 0;
     }
@@ -40,15 +43,15 @@ const TitleText = styled.h1`
 `;
 
 const BodyContainer = styled.div`
-    //display: ${props => props.open ? "flex" : "none"};
-    display: flex;
+    display: ${props => props.open ? "flex" : "none"};
     height: ${props => props.open ? "fit-content" : "0"};
     opacity: ${props => props.open ? "1" : "0"};
     flex-direction: column;
-    color: ${theme.colors.titleBlack};
+    color: ${theme.colors.darkBrown};
     padding: 3.5rem 12rem;
     margin: 0;
     transition: all ease-in-out .5s;
+    border-top: 2px solid ${theme.colors.darkBrown};
     @media only screen and (max-width: ${theme.sizes.mobile}){
         padding: 1rem;
     }
