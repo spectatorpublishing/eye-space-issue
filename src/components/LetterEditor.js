@@ -40,12 +40,15 @@ const TitleText = styled.h1`
 `;
 
 const BodyContainer = styled.div`
-    display: ${props => props.open ? "flex" : "none"};
+    //display: ${props => props.open ? "flex" : "none"};
+    display: flex;
+    height: ${props => props.open ? "fit-content" : "0"};
+    opacity: ${props => props.open ? "1" : "0"};
     flex-direction: column;
     color: ${theme.colors.titleBlack};
     padding: 3.5rem 12rem;
     margin: 0;
-    transition: display 1s ease-in-out;
+    transition: all ease-in-out .5s;
     @media only screen and (max-width: ${theme.sizes.mobile}){
         padding: 1rem;
     }
@@ -71,8 +74,14 @@ const TagLine = styled.p`
     margin-top: 0;
 `;
 
+const Arrow = styled.div`
+    transform: ${props => props.upside ? "none" : "rotateZ(-180deg)"};
+    transition: transform ease-in-out .5s;
+    cursor: pointer; 
+`;
+
 const LetterEditor = ({ }) => {
-    const [isOpen, setIsOpen] = React.useState(true);
+    const [isOpen, setIsOpen] = React.useState(false);
 
     function handleClick() {
         console.log("clicked");
@@ -83,9 +92,9 @@ const LetterEditor = ({ }) => {
         <Container>
             <TitleContainer>
                 <TitleText>Letter from the Editor</TitleText>
-                <button onClick={handleClick}>
+                <Arrow onClick={handleClick} upside={isOpen}>
                     <FontAwesomeIcon icon={faArrowDown} size="2xl"></FontAwesomeIcon>
-                </button>
+                </Arrow>
             </TitleContainer>
             <BodyContainer open={isOpen}>
                 <BodyText>{PLACEHOLDER}</BodyText>
