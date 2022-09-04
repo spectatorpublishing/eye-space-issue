@@ -1,17 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
+import theme from '../theme';
 
 const Container = styled.div`
     display: flex;
+    margin: 2rem;
     flex-direction: row;
-    padding: 2rem;
-    border-top: 1px solid white;
-    padding: 1rem;
+    width: 30rem;
+    height: 10rem;
+    position: absolute;
+    top: 10%;
+    z-index: 100;
+    background-color: ${theme.colors.white};
 
     @media only screen and (max-width: 768px){
-        padding: 1rem 0 1rem 1rem;
         align-items: center;
         border-top: none;
+        min-width: 80%;
     }
 `;
 
@@ -21,8 +26,8 @@ const Image = styled.div`
     position: relative;
 
     img {
-        width: 9rem;   
-        height: 9rem;    
+        width: 10rem;   
+        height: 10rem;    
         object-fit: cover;
     }
 
@@ -39,9 +44,10 @@ const Image = styled.div`
 const Text = styled.div`
     display: flex;
     flex-direction: column;
-    margin-left: 2rem;
+    margin-left: 1rem;
     justify-content: center;
     width: 20rem;    
+    padding: 1rem;
 
     @media only screen and (max-width: 768px){
         display: flex;
@@ -62,17 +68,13 @@ const Title = styled.div`
     font-weight: 700;
 
     @media only screen and (max-width: 768px){
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
 `;
 
 const Author = styled.div`
     margin-top: 1rem;
     font-family: "Inter";
-    @media only screen and (max-width: 768px){
-        font-size: 0.875rem;
-        margin-top: 0.5rem;
-    }
 `;
 
 const Column = styled.div`
@@ -80,24 +82,7 @@ const Column = styled.div`
     flex-direction: column;
 `;
 
-const SectionArticle = ({ link, title, author, image }) => {
-    let isMobile = window.innerWidth <= 768;
-
-    if (isMobile) {
-        return (
-            <Container >
-                <Column>
-                    <Image>
-                        <img src={image} />
-                        <Text>
-                            <Title>{title}</Title>
-                            <Author>{author}</Author>
-                        </Text>
-                    </Image>
-                </Column>
-            </Container>
-        )
-    }
+const Popup = ({ link, title, author, image }) => {
     return (
         <Container>
             <Column>
@@ -113,4 +98,4 @@ const SectionArticle = ({ link, title, author, image }) => {
     )
 };
 
-export default SectionArticle;
+export default Popup;

@@ -3,7 +3,7 @@ export const lenape_articles = [
       "article_link": "https://www.columbiaspectator.com/news/2022/08/23/despite-rise-in-media-coverage-local-crime-remains-relatively-low/",
       "article_title": "Despite rise in media coverage, local crime remains relatively low",
       "article_authors": "Claire Cleary",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/W4KY5UHW7VD5NIT7NPA6YGE2W4.jpg"
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/W4KY5UHW7VD5NIT7NPA6YGE2W4.jpg",
     },
     {
       "article_link": "https://www.columbiaspectator.com/news/2022/08/23/in-the-face-of-weakened-gun-control-local-advocates-turn-to-education-and-regulation/",
@@ -24,6 +24,13 @@ export const lenape_articles = [
       "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7DKJUD7WMVAYHLJNLHMQRPTBYM.jpg"
     }
   ];
+
+export const lenape_pins = [
+  {
+    "top": 41,
+    "left": 39,
+  }
+];
 
 export const columbia_articles = [
     {
@@ -76,6 +83,13 @@ export const columbia_articles = [
     }
   ];
 
+export const columbia_pins = [
+  {
+    "top": 41,
+    "left": 39,
+  }
+];
+
 export const off_campus_articles = [
     {
       "article_link": "https://www.columbiaspectator.com/arts-and-entertainment/2022/08/18/theres-a-new-rivr-flowingand-its-on-your-phone/",
@@ -109,6 +123,33 @@ export const off_campus_articles = [
     }
   ];
 
+export const off_campus_pins = [
+  {
+    "top": 65,
+    "left": 50,
+  },
+  {
+    "top": 61,
+    "left": 79,
+  },
+  {
+    "top": 44,
+    "left": 34,
+  },
+  {
+    "top": 61,
+    "left": 41,
+  },
+  {
+    "top": 65,
+    "left": 43,
+  },
+  {
+    "top": 55,
+    "left": 55.5,
+  },
+];
+
 export const present_day_articles = [
     {
       "article_link": "https://www.columbiaspectator.com/opinion/2022/08/19/if-barnard-responds-to-the-challenge-of-the-womens-movement-then-where-are-our-abortion-pills/",
@@ -141,3 +182,73 @@ export const present_day_articles = [
       "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/OEUGV4DXWBFD5INECWCVYI6SYE.JPG"
     }
   ];
+
+export const present_day_pins = [
+  {
+    "top": 71,
+    "left": 43.5,
+  },
+  {
+    "top": 61,
+    "left": 44,
+  },
+  {
+    "top": 61,
+    "left": 62,
+  },
+  {
+    "top": 32,
+    "left": 34,
+  },
+  {
+    "top": 58,
+    "left": 31,
+  },
+  {
+    "top": 61,
+    "left": 39.5,
+  },
+  {
+    "top": 47,
+    "left": 47,
+  },
+  // ILLO
+  {
+    "top": 41,
+    "left": 47,
+  },
+  {
+    "top": 43,
+    "left": 40,
+  },
+  {
+    "top": 39,
+    "left": 33.5,
+  },
+  {
+    "top": 32,
+    "left": 38.5,
+  },
+  {
+    "top": 82,
+    "left": 50.5,
+  },
+  {
+    "top": 49,
+    "left": 49,
+  },
+  {
+    "top": 37,
+    "left": 35.5,
+  },
+];
+
+export const map_urls = [
+  {
+    "lenape": "https://eye-space.s3.amazonaws.com/Lenape+Land+Map.png",
+    "columbia": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/WXWTQLERNVD7XCDIGHFXGFXZZI.png",
+    "off_campus": "https://eye-space.s3.amazonaws.com/Off+Campus+Map-1.png",
+    "present_day": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/WXWTQLERNVD7XCDIGHFXGFXZZI.png",
+  }
+
+];
