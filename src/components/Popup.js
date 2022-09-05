@@ -45,7 +45,6 @@ const Triangle = styled.div`
 const Image = styled.div`
     display: flex;
     margin: auto 0 auto 0;
-    position: relative;
 
     img {
         width: 10rem;   
@@ -67,7 +66,7 @@ const Text = styled.div`
     flex-direction: column;
     margin-left: 1rem;
     justify-content: center;
-    width: 16rem;    
+    width: calc(100% - 8rem);
     padding: 1rem;
 `;
 
@@ -77,13 +76,14 @@ const Title = styled.div`
     font-weight: 700;
 
     @media only screen and (max-width: 768px){
-        font-size: 1rem;
+        font-size: 0.875rem;
     }
 `;
 
 const Author = styled.div`
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     font-family: "Inter";
+    font-size: 0.875rem;
 `;
 
 const Column = styled.div`

@@ -15,6 +15,13 @@ const Container = styled.div`
     }
 `;
 
+const Wrapper = styled.div`
+    a {
+        color: black;
+        text-decoration: none;
+    }
+`;
+
 const Image = styled.div`
     display: flex;
     margin: auto 0 auto 0;
@@ -85,31 +92,40 @@ const SectionArticle = ({ link, title, author, image }) => {
 
     if (isMobile) {
         return (
-            <Container >
-                <Column>
-                    <Image>
-                        <img src={image} />
-                        <Text>
-                            <Title>{title}</Title>
-                            <Author>{author}</Author>
-                        </Text>
-                    </Image>
-                </Column>
-            </Container>
+            <Wrapper>
+                <a href={link}>
+                    <Container >
+                        <Column>
+                            <Image>
+                                <img src={image} />
+                                <Text>
+                                    <Title>{title}</Title>
+                                    <Author>{author}</Author>
+                                </Text>
+                            </Image>
+                        </Column>
+                    </Container>
+                </a>
+            </Wrapper>
         )
     }
+    
     return (
-        <Container>
-            <Column>
-                <Image>
-                    <img src={image} />
-                </Image>
-            </Column>
-            <Text>
-                <Title>{title}</Title>
-                <Author>{author}</Author>
-            </Text>
-        </Container>
+        <Wrapper>
+            <a href={link}>
+                <Container>
+                    <Column>
+                        <Image>
+                            <img src={image} />
+                        </Image>
+                    </Column>
+                    <Text>
+                        <Title>{title}</Title>
+                        <Author>{author}</Author>
+                    </Text>
+                </Container>
+            </a>
+        </Wrapper>
     )
 };
 

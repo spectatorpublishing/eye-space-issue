@@ -86,6 +86,12 @@ const Pin = styled.div`
     }
 `;
 
+const Modal = styled.div`
+    width: 100%;
+    height: 100%;
+    position: absolute;
+`;
+
 const CustomPin = ({ id, top, left, url }) => {
     let top_percent = top + "%"
     let left_percent = left + "%"
@@ -99,31 +105,47 @@ const CustomPin = ({ id, top, left, url }) => {
 
 const Section = ({ articles, map_url, pins }) => {
 	const [ id, setId ] = useState(-1);
+    let isMobile = window.innerWidth <= 768;
 
     return (
         <Wrapper>
             <NavBar/>
             <SectionContainer>
-                <Map>
-                    <Image onClick={() => { if (id !== -1) {setId(-1)}}}>
-                        <img src={map_url} />
-                        {pins ? pins.map( (pin, i) => (
-                            <div onClick={() => setId(id === -1 ? i : -1)}>
-                                 <CustomPin top={pin.top} left={pin.left}         
-                                    onClick={() => setId(i)}>
-                                </CustomPin>
-                            </div>
-                        )) : null}
-                    </Image>
-                    {id === -1 ? null : <Popup
-                            link={articles[id].article_link}
-                            title={articles[id].article_title}
-                            author={articles[id].article_authors}
-                            image={articles[id].image_url}
-                            top={pins[id].top}
-                            left={pins[id].left}
-                    />}
-                </Map>
+                    <Map>
+                        <Modal onClick={() => { if (id !== -1) {setId(-1)}}}
+                            style={{ display: id !== -1 ? "flex" : "none"}}
+                            />
+                        <Image>
+                            <Modal onClick={() => { if (id !== -1) {setId(-1)}}}
+                                style={{ display: id !== -1 ? "flex" : "none"}}
+                                />
+                            <img src={map_url} />
+                            {pins ? pins.map( (pin, i) => (
+                                <div onClick={() => setId(id !== i ? i : -1)}>
+                                    <CustomPin top={pin.top} left={pin.left}         
+                                        onClick={() => setId(i)}>
+                                    </CustomPin>
+                                </div>
+                            )) : null}
+                        {id === -1 ? null : isMobile ? null : <Popup
+                                link={articles[id] ? articles[id].article_link : ""}
+                                title={articles[id] ? articles[id].article_title : ""}
+                                author={articles[id] ? articles[id].article_authors : ""}
+                                image={articles[id] ? articles[id].image_url : ""}
+                                top={pins[id].top}
+                                left={pins[id].left}
+                        />}
+                        </Image>
+                        {id === -1 ? null : !isMobile ? null : <Popup
+                                link={articles[id] ? articles[id].article_link : ""}
+                                title={articles[id] ? articles[id].article_title : ""}
+                                author={articles[id] ? articles[id].article_authors : ""}
+                                image={articles[id] ? articles[id].image_url : ""}
+                                top={pins[id].top}
+                                left={pins[id].left}
+                        />}
+                    </Map>
+
                 <Articles>
                     {articles.map(article => (
                         <SectionArticle
