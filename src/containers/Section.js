@@ -37,7 +37,7 @@ const Section = ({ articles, header }) => {
     return (
         <Wrapper>
             <MobileNav current={header}/>
-            <NavBar/>
+            <NavBar current={header}/>
             <Map><p>{header} map goes here</p></Map>
             <Articles>
                 {articles.map(article => (

@@ -27,15 +27,12 @@ const MenuItem = styled.div`
     display: flex;
     align-items: center;
     a {
-        text-decoration: none;
+        text-decoration:${props => props.current ? 'underline' : 'none'};
+        text-underline-offset: 5px;
         color: ${theme.colors.tan};
         font-family: "Libre Baskerville";
         font-size: 1.25rem;
 
-    }
-    a:hover {
-        text-decoration: underline;
-        text-underline-offset: 5px;
     }
 `;
 
@@ -49,14 +46,14 @@ const EyeLogo = styled.div`
     }
 `
 
-const NavBar = ({ }) => {
+const NavBar = ({ current }) => {
     return (
         <Container>
                 <EyeLogo>
                     <img src="https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/WZKAIDANZVFV5PH57SCIT7XVIE"/>
                 </EyeLogo>
                 {sections.map(section => (
-                    <MenuItem>
+                    <MenuItem current={current === section.title}>
                         <Link to={section.url}>{section.title}</Link>
                     </MenuItem>
                 ))}

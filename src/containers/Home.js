@@ -19,7 +19,7 @@ const Home = ({ }) => {
     return (
         <HomeContainer>
             <MobileNav current="Home"/>
-            <NavBar/>
+            <NavBar current="Home"/>
             <MainTitle/>
             <LetterEditor/>
             <AllArticles/>
