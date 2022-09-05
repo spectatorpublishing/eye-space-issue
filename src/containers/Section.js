@@ -44,7 +44,7 @@ const Map = styled.div`
     img {
         max-height: 100%;
         max-width: 100%;
-        object-fit: contain;
+        object-fit: cover;
         max-height: calc(100vh - 6rem);
     }
 

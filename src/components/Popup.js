@@ -56,7 +56,6 @@ const Image = styled.div`
         img {
             width: 8rem;   
             height: 8rem;    
-            object-fit: cover;
         }
     }
 `;
@@ -64,9 +63,9 @@ const Image = styled.div`
 const Text = styled.div`
     display: flex;
     flex-direction: column;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     justify-content: center;
-    width: calc(100% - 8rem);
+    width: calc(100% - 11rem);
     padding: 1rem;
 `;
 
