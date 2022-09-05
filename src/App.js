@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 import Home from './containers/Home';
 import Section from "./containers/Section";
-import { lenape_articles, off_campus_articles, present_day_articles } from "./data/articles";
+import { lenape_articles, morningside_heights_articles, present_day_articles } from "./data/articles";
 import { lenape_pins, off_campus_pins, present_day_pins} from "./data/pins";
 
 const App = () => {
@@ -23,8 +23,8 @@ const App = () => {
         <Route path="/off-campus" 
           element={
             <Section 
-              header="Off Campus" 
-              articles={off_campus_articles} 
+              header="Morningside Heights" 
+              articles={morningside_heights_articles} 
               map_url={"https://eye-space.s3.amazonaws.com/OffCampusMap_Sepia.jpg"}
               pins={off_campus_pins}/>} />
         <Route path="/present-day" 
