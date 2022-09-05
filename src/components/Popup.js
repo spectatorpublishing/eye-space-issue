@@ -98,7 +98,7 @@ const Popup = ({ link, title, author, image, top, left }) => {
 
     return (
         <Wrapper>
-            <a href={link}>
+            <a href={link} target="_blank">
                 <Container style={{ top: window.innerWidth <= 768 ? zero_percent : top_percent, 
                                     left: window.innerWidth <= 768 ? zero_percent : left_percent }}>
                         <Column>

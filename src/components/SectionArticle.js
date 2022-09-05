@@ -93,7 +93,7 @@ const SectionArticle = ({ link, title, author, image }) => {
     if (isMobile) {
         return (
             <Wrapper>
-                <a href={link}>
+                <a href={link} target="_blank">
                     <Container >
                         <Column>
                             <Image>
@@ -109,10 +109,10 @@ const SectionArticle = ({ link, title, author, image }) => {
             </Wrapper>
         )
     }
-    
+
     return (
         <Wrapper>
-            <a href={link}>
+            <a href={link} target="_blank">
                 <Container>
                     <Column>
                         <Image>
