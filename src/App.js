@@ -5,7 +5,6 @@ import {
 } from "react-router-dom";
 import Home from './containers/Home';
 import Section from "./containers/Section";
-import NavBar from "./components/NavBar";
 import { lenape_articles } from "./data/articles";
 import { columbia_articles } from "./data/articles";
 import { off_campus_articles } from "./data/articles";
@@ -14,7 +13,6 @@ import { present_day_articles } from "./data/articles";
 const App = () => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <NavBar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/lenape-land" element={<Section header="Lenape Land" articles={lenape_articles}/>} />

@@ -5,6 +5,8 @@ import MainTitle from '../components/MainTitle';
 import LetterEditor from '../components/LetterEditor';
 import AllArticles from '../components/AllArticles';
 import Credits from '../components/Credits';
+import NavBar from "../components/NavBar";
+import MobileNav from "../components/MobileNav";
 import theme from '../theme';
 
 const HomeContainer = styled.div`
@@ -16,6 +18,8 @@ const HomeContainer = styled.div`
 const Home = ({ }) => {
     return (
         <HomeContainer>
+            <MobileNav current="Home"/>
+            <NavBar/>
             <MainTitle/>
             <LetterEditor/>
             <AllArticles/>

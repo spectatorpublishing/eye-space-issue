@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import theme from '../theme';
 import SectionArticle from '../components/SectionArticle';
+import NavBar from "../components/NavBar";
+import MobileNav from "../components/MobileNav";
 
 const Wrapper = styled.main`
     display: flex;
@@ -34,6 +36,8 @@ const Articles = styled.div`
 const Section = ({ articles, header }) => {
     return (
         <Wrapper>
+            <MobileNav current={header}/>
+            <NavBar/>
             <Map><p>{header} map goes here</p></Map>
             <Articles>
                 {articles.map(article => (
