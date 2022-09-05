@@ -25,71 +25,6 @@ export const lenape_articles = [
     }
   ];
 
-export const lenape_pins = [
-  {
-    "top": 41,
-    "left": 39,
-  }
-];
-
-export const columbia_articles = [
-    {
-      "article_link": "https://www.columbiaspectator.com/news/2022/08/18/columbia-to-offer-dual-masters-degrees-in-business-administration-engineering/",
-      "article_title": "Columbia to offer dual master's degrees in business administration, engineering",
-      "article_authors": "Sophia Cordoba",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/OEGSYEWUYRE6JERM2CTLRKCKG4.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/news/2022/08/18/columbia-global-centers-reorganizes-structure-brings-in-new-leadership/",
-      "article_title": "Columbia Global Centers reorganizes structure, brings in new leadership",
-      "article_authors": "Jacob Randall",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/TIWMBXOV3VCOBI67AUZ5UU333E.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/news/2022/08/17/reproductive-justice-collective-advocates-for-on-campus-medication-abortion/",
-      "article_title": "Reproductive Justice Collective advocates for on-campus medication abortion",
-      "article_authors": "Carrie Crespino And Driscoll Callan",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/SHITB3NFCFCIPEE4VVRKYCTRUQ.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/news/2022/08/11/wallach-gaming-lounge-to-open-this-fall/",
-      "article_title": "Wallach gaming lounge to open this fall",
-      "article_authors": "Ayaan Ali",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/MC7AJSCQ4NFYHIIURKHUQDSSXM.JPG"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/news/2022/08/17/ivy-league-endowments-expected-to-tumble-according-to-new-report/",
-      "article_title": "Ivy League endowments expected to tumble, according to new report",
-      "article_authors": "Shea Vance",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/26WVN5E6M5HV5FHL4VCVNQUK34.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/news/2022/08/18/record-high-285-barnard-students-participate-in-2022-summer-research-institute/",
-      "article_title": "Record-high 285 Barnard students participate in 2022 Summer Research Institute",
-      "article_authors": "Fatimah Khan",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/FLM7J2DIIBAI7BS22JJLGUMLJQ.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/news/2022/08/17/columbia-housing-to-welcome-over-6000-residents-this-year-raising-longstanding-space-concerns/",
-      "article_title": "Columbia Housing to welcome over 6,000 residents this year, raising longstanding space concerns",
-      "article_authors": "Nicole Wong",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/L45BLLOBNJAALH5EBVN5A7D7YA.JPG"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/news/2022/08/22/nsop-immersion-programs-restructured-no-longer-optional/",
-      "article_title": "NSOP Immersion Programs restructured, no longer optional",
-      "article_authors": "Ariel Yu",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7KNBYRGLSFDARDIHFJWHPTASEU.jpg"
-    }
-  ];
-
-export const columbia_pins = [
-  {
-    "top": 41,
-    "left": 39,
-  }
-];
-
 export const off_campus_articles = [
     {
       "article_link": "https://www.columbiaspectator.com/arts-and-entertainment/2022/08/18/theres-a-new-rivr-flowingand-its-on-your-phone/",
@@ -123,33 +58,6 @@ export const off_campus_articles = [
     }
   ];
 
-export const off_campus_pins = [
-  {
-    "top": 65,
-    "left": 50,
-  },
-  {
-    "top": 61,
-    "left": 79,
-  },
-  {
-    "top": 44,
-    "left": 34,
-  },
-  {
-    "top": 61,
-    "left": 41,
-  },
-  {
-    "top": 65,
-    "left": 43,
-  },
-  {
-    "top": 55,
-    "left": 55.5,
-  },
-];
-
 export const present_day_articles = [
     {
       "article_link": "https://www.columbiaspectator.com/opinion/2022/08/19/if-barnard-responds-to-the-challenge-of-the-womens-movement-then-where-are-our-abortion-pills/",
@@ -182,73 +90,3 @@ export const present_day_articles = [
       "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/OEUGV4DXWBFD5INECWCVYI6SYE.JPG"
     }
   ];
-
-export const present_day_pins = [
-  {
-    "top": 71,
-    "left": 43.5,
-  },
-  {
-    "top": 61,
-    "left": 44,
-  },
-  {
-    "top": 61,
-    "left": 62,
-  },
-  {
-    "top": 32,
-    "left": 34,
-  },
-  {
-    "top": 58,
-    "left": 31,
-  },
-  {
-    "top": 61,
-    "left": 39.5,
-  },
-  {
-    "top": 47,
-    "left": 47,
-  },
-  // ILLO
-  {
-    "top": 41,
-    "left": 47,
-  },
-  {
-    "top": 43,
-    "left": 40,
-  },
-  {
-    "top": 39,
-    "left": 33.5,
-  },
-  {
-    "top": 32,
-    "left": 38.5,
-  },
-  {
-    "top": 82,
-    "left": 50.5,
-  },
-  {
-    "top": 49,
-    "left": 49,
-  },
-  {
-    "top": 37,
-    "left": 35.5,
-  },
-];
-
-export const map_urls = [
-  {
-    "lenape": "https://eye-space.s3.amazonaws.com/Lenape+Land+Map.png",
-    "columbia": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/WXWTQLERNVD7XCDIGHFXGFXZZI.png",
-    "off_campus": "https://eye-space.s3.amazonaws.com/Off+Campus+Map-1.png",
-    "present_day": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/WXWTQLERNVD7XCDIGHFXGFXZZI.png",
-  }
-
-];

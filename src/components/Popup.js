@@ -4,19 +4,41 @@ import theme from '../theme';
 
 const Container = styled.div`
     display: flex;
-    margin: 2rem;
     flex-direction: row;
     width: 30rem;
     height: 10rem;
     position: absolute;
-    top: 10%;
     z-index: 100;
     background-color: ${theme.colors.white};
+    transform: translate(-50%, -140%); // anchor point at bottom of pin
+    @media (max-width: 768px) {
+        transform: translate(0, 0); // anchor point at bottom of pin
+        margin: 1rem;
+        height: 8rem;
+        width: calc(100% - 2rem);
+    }
+`;
 
-    @media only screen and (max-width: 768px){
-        align-items: center;
-        border-top: none;
-        min-width: 80%;
+const Wrapper = styled.div`
+    a {
+        color: black;
+        text-decoration: none;
+    }
+`;
+
+const Triangle = styled.div`
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+    z-index: 200;
+    top: 10rem;
+    left: 15rem;
+    transform: translate(-50%,0%); // anchor point at bottom of pin
+    @media (max-width: 768px) {
+        display: none;
     }
 `;
 
@@ -31,12 +53,11 @@ const Image = styled.div`
         object-fit: cover;
     }
 
-    @media only screen and (max-width: 768px){
-        position: relative;
-        img{
-            width: 16rem;   
-            height: 8rem; 
-            filter: brightness(50%);
+    @media (max-width: 768px) {
+        img {
+            width: 8rem;   
+            height: 8rem;    
+            object-fit: cover;
         }
     }
 `;
@@ -46,20 +67,8 @@ const Text = styled.div`
     flex-direction: column;
     margin-left: 1rem;
     justify-content: center;
-    width: 20rem;    
+    width: 16rem;    
     padding: 1rem;
-
-    @media only screen and (max-width: 768px){
-        display: flex;
-        justify-content: center;
-        height: 100%;
-        width: 15rem;
-        margin: 0 0.5rem;
-        position: absolute;
-        color: white;
-        text-align: center;
-        z-index: 5;
-    }
 `;
 
 const Title = styled.div`
@@ -82,19 +91,29 @@ const Column = styled.div`
     flex-direction: column;
 `;
 
-const Popup = ({ link, title, author, image }) => {
+const Popup = ({ link, title, author, image, top, left }) => {
+    let top_percent = top + "%"
+    let left_percent = left + "%"
+    let zero_percent = 0 + "%"
+
     return (
-        <Container>
-            <Column>
-                <Image>
-                    <img src={image} />
-                </Image>
-            </Column>
-            <Text>
-                <Title>{title}</Title>
-                <Author>{author}</Author>
-            </Text>
-        </Container>
+        <Wrapper>
+            <a href={link}>
+                <Container style={{ top: window.innerWidth <= 768 ? zero_percent : top_percent, 
+                                    left: window.innerWidth <= 768 ? zero_percent : left_percent }}>
+                        <Column>
+                            <Image>
+                                <img src={image} />
+                            </Image>
+                        </Column>
+                        <Text>
+                            <Title>{title}</Title>
+                            <Author>{author}</Author>
+                        </Text>
+                        <Triangle></Triangle>
+                </Container>
+            </a>
+        </Wrapper>
     )
 };
 

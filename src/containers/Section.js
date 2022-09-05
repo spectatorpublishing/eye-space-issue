@@ -4,7 +4,6 @@ import theme from '../theme';
 import SectionArticle from '../components/SectionArticle';
 import Popup from '../components/Popup';
 import NavBar from '../components/NavBar';
-import { lenape_pins, columbia_pins, off_campus_pins, present_day_pins } from '../data/articles';
 
 const Wrapper = styled.main`
     display: flex;
@@ -54,8 +53,6 @@ const Map = styled.div`
             max-height: calc(100vh - 16rem);
         }
     }
-        /* max-width: 100%; */
-    }
 `;
 
 const Articles = styled.div`
@@ -78,11 +75,15 @@ const pin_url = "https://eye-space.s3.amazonaws.com/Red_Pin.png";
 const Pin = styled.div`
     position: absolute;
     cursor: pointer;
-    width: 1rem;
+    transform: translate(-50%, -100%); // anchor point at bottom of pin
+    width: 1.5rem;
     object-fit: cover;
     top: 41%;
     left: 39%;
     z-index: 100;
+    @media (max-width: 768px) {
+        width: 1rem;
+    }
 `;
 
 const CustomPin = ({ id, top, left, url }) => {
@@ -104,12 +105,14 @@ const Section = ({ articles, map_url, pins }) => {
             <NavBar/>
             <SectionContainer>
                 <Map>
-                    <Image onClick={() => setId(id === -1 ? 0 : -1)}>
+                    <Image onClick={() => { if (id !== -1) {setId(-1)}}}>
                         <img src={map_url} />
                         {pins ? pins.map( (pin, i) => (
-                            <CustomPin top={pin.top} left={pin.left}         
-                            onClick={() => setId(i)}>
-                            </CustomPin>
+                            <div onClick={() => setId(id === -1 ? i : -1)}>
+                                 <CustomPin top={pin.top} left={pin.left}         
+                                    onClick={() => setId(i)}>
+                                </CustomPin>
+                            </div>
                         )) : null}
                     </Image>
                     {id === -1 ? null : <Popup
