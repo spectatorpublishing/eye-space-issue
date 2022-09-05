@@ -5,7 +5,7 @@ export const lenape_pins = [
     }
 ];
 
-export const off_campus_pins = [
+export const morningside_heights_pins = [
     {
         "top": 69,
         "left": 52,
@@ -89,5 +89,65 @@ export const present_day_pins = [
     {
       "top": 41,
       "left": 36.5,
+    },
+];
+
+export const present_day_pins_mobile = [
+    {
+      "top": 74,
+      "left": 49,
+    },
+    {
+      "top": 65,
+      "left": 49,
+    },
+    {
+      "top": 65,
+      "left": 85,
+    },
+    {
+      "top": 36,
+      "left": 29,
+    },
+    {
+      "top": 62,
+      "left": 25,
+    },
+    {
+      "top": 65,
+      "left": 40.5,
+    },
+    {
+      "top": 51,
+      "left": 54,
+    },
+    // ILLO
+    {
+      "top": 45,
+      "left": 54,
+    },
+    {
+      "top": 48,
+      "left": 41,
+    },
+    {
+      "top": 43,
+      "left": 29,
+    },
+    {
+      "top": 36,
+      "left": 38.5,
+    },
+    {
+      "top": 86,
+      "left": 61,
+    },
+    {
+      "top": 53,
+      "left": 58,
+    },
+    {
+      "top": 41,
+      "left": 34,
     },
 ];
