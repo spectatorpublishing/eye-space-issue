@@ -10,6 +10,7 @@ import theme from '../theme';
 
 
 const Container = styled.div`
+    width: 100%;
     @media only screen and (min-width: 768px){
         display: none;
 
@@ -65,7 +66,6 @@ const MobileNav = ({ }) => {
     const [open, setOpen] = React.useState(false);
     
     function handleClick() {
-        console.log(open)
         setOpen(!open)
     }
 
@@ -81,8 +81,6 @@ const MobileNav = ({ }) => {
                 {!open &&
                     sections.map(section => {
                         if(window.location.pathname === section.url) {
-                            console.log(window.location.pathname);
-                            console.log(window.location.pathname === section.url);
                             return <CurrentTab>
                                 {section.title}
                             </CurrentTab>

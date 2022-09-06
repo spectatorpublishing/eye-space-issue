@@ -21,10 +21,6 @@ const HomeContainer = styled.div`
 const Top = styled.div`
     display: flex;
     width: 100%;
-
-    @media only screen and (max-width: 768px){
-
-    }
 `;
 
 const Home = ({ }) => {
