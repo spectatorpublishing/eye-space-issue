@@ -46,17 +46,19 @@ const EyeLogo = styled.div`
     }
 `
 
-const NavBar = ({ current }) => {
+const NavBar = ({ }) => {
     return (
         <Container>
-                <EyeLogo>
+            <EyeLogo>
+                <a href="https://www.columbiaspectator.com/eye" style={{}}>
                     <img src="https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/WZKAIDANZVFV5PH57SCIT7XVIE"/>
-                </EyeLogo>
-                {sections.map(section => (
-                    <MenuItem current={current === section.title}>
-                        <Link to={section.url}>{section.title}</Link>
-                    </MenuItem>
-                ))}
+                </a>                
+            </EyeLogo>
+            {sections.map(section => (
+                <MenuItem current={window.location.pathname === section.url}>
+                    <Link to={section.url}>{section.title}</Link>
+                </MenuItem>
+            ))}
         </Container>
     )
 };

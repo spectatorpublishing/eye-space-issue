@@ -28,7 +28,7 @@ const MenuItem = styled.div`
     text-align: center;
     padding: 0.5rem 1rem;
     background: ${props => props.current ? theme.colors.tan :theme.colors.darkBrown};
-    border: 0.75rem solid ${theme.colors.darkBrown};
+    border: 0.5rem solid ${theme.colors.darkBrown};
 
     a {
         text-decoration: none;
@@ -56,10 +56,11 @@ const CurrentTab = styled.div`
     display: flex;
     color: ${theme.colors.tan};
     font-family: "Libre Baskerville";
-    font-size: 1rem;
+    font-size: 1.25rem;
+    padding-top: 0.75rem;
 `;
 
-const MobileNav = ({ current }) => {
+const MobileNav = ({ }) => {
 
     const [open, setOpen] = React.useState(false);
     
@@ -77,23 +78,14 @@ const MobileNav = ({ current }) => {
                 </EyeLogo>
                 }
 
-                {/* <CurrentTab>
-                    test
-                </CurrentTab> */}
-
                 {!open &&
                     sections.map(section => {
-                        if(current === section.title) {
-                            // <CurrentTab>
-                            //     {section.title}
-                            // </CurrentTab>
-                            // <CurrentTab>
-                            //     test
-                            // </CurrentTab>
-                            console.log("wjfjraf");
-                            <MenuItem current={current === section.title} >
-                                <Link to={section.url}>{section.title}</Link>
-                            </MenuItem>
+                        if(window.location.pathname === section.url) {
+                            console.log(window.location.pathname);
+                            console.log(window.location.pathname === section.url);
+                            return <CurrentTab>
+                                {section.title}
+                            </CurrentTab>
                         }
                     }
                     )      
@@ -119,7 +111,7 @@ const MobileNav = ({ current }) => {
 
             <Menu isOpen={open} width={'100vw'} onClose={handleClick} onOpen={handleClick}>
                 {sections.map(section => (
-                    <MenuItem current={current === section.title} >
+                    <MenuItem current={window.location.pathname === section.url} >
                         <Link to={section.url}>{section.title}</Link>
                     </MenuItem>
                 ))}    

@@ -7,7 +7,7 @@ import MobileNav from "../components/MobileNav";
 
 const Wrapper = styled.main`
     display: flex;
-
+    
     @media (max-width: 768px) {
         flex-direction: column;
     }
@@ -36,8 +36,8 @@ const Articles = styled.div`
 const Section = ({ articles, header }) => {
     return (
         <Wrapper>
-            <MobileNav current={header}/>
-            <NavBar current={header}/>
+            <MobileNav/>
+            <NavBar/>
             <Map><p>{header} map goes here</p></Map>
             <Articles>
                 {articles.map(article => (

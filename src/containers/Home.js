@@ -10,6 +10,9 @@ import MobileNav from "../components/MobileNav";
 import theme from '../theme';
 
 const HomeContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+
     @media only screen and (max-width: 768px){
 
     }
@@ -18,8 +21,8 @@ const HomeContainer = styled.div`
 const Home = ({ }) => {
     return (
         <HomeContainer>
-            <MobileNav current="Home"/>
-            <NavBar current="Home"/>
+            <MobileNav/>
+            <NavBar/>
             <MainTitle/>
             <LetterEditor/>
             <AllArticles/>
