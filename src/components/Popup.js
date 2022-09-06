@@ -10,9 +10,9 @@ const Container = styled.div`
     position: absolute;
     z-index: 100;
     background-color: ${theme.colors.white};
-    transform: translate(-50%, -140%); // anchor point at bottom of pin
+    transform: translate(-50%, -140%); // anchor point at bottom center of popup
     @media (max-width: 768px) {
-        transform: translate(0, 0); // anchor point at bottom of pin
+        transform: translate(0, 0);
         margin: 1rem;
         height: 8rem;
         width: calc(100% - 2rem);
@@ -36,7 +36,7 @@ const Triangle = styled.div`
     z-index: 200;
     top: 10rem;
     left: 15rem;
-    transform: translate(-50%,0%); // anchor point at bottom of pin
+    transform: translate(-50%,0%);
     @media (max-width: 768px) {
         display: none;
     }
@@ -98,18 +98,20 @@ const Popup = ({ link, title, author, image, top, left }) => {
     return (
         <Wrapper>
             <a href={link} target="_blank">
-                <Container style={{ top: window.innerWidth <= 768 ? zero_percent : top_percent, 
-                                    left: window.innerWidth <= 768 ? zero_percent : left_percent }}>
-                        <Column>
-                            <Image>
-                                <img src={image} />
-                            </Image>
-                        </Column>
-                        <Text>
-                            <Title>{title}</Title>
-                            <Author>{author}</Author>
-                        </Text>
-                        <Triangle></Triangle>
+                <Container style={{
+                    top: window.innerWidth <= 768 ? zero_percent : top_percent,
+                    left: window.innerWidth <= 768 ? zero_percent : left_percent
+                }}>
+                    <Column>
+                        <Image>
+                            <img src={image} />
+                        </Image>
+                    </Column>
+                    <Text>
+                        <Title>{title}</Title>
+                        <Author>{author}</Author>
+                    </Text>
+                    <Triangle></Triangle>
                 </Container>
             </a>
         </Wrapper>

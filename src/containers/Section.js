@@ -92,60 +92,58 @@ const Modal = styled.div`
     position: absolute;
 `;
 
-const CustomPin = ({ id, top, left, url }) => {
+const CustomPin = ({ top, left }) => {
     let top_percent = top + "%"
     let left_percent = left + "%"
     return (
-        <Pin style={{ top: top_percent, left: left_percent }}> 
+        <Pin style={{ top: top_percent, left: left_percent }}>
             <img src={pin_url} />
         </Pin>
     );
 };
 
-
 const Section = ({ articles, map_url, pins }) => {
-	const [ id, setId ] = useState(-1);
+    const [id, setId] = useState(-1);
     let isMobile = window.innerWidth <= 768;
 
     return (
         <Wrapper>
-            <NavBar/>
+            <NavBar />
             <SectionContainer>
-                    <Map>
-                        <Modal onClick={() => { if (id !== -1) {setId(-1)}}}
-                            style={{ display: id !== -1 ? "flex" : "none"}}
-                            />
-                        <Image>
-                            <Modal onClick={() => { if (id !== -1) {setId(-1)}}}
-                                style={{ display: id !== -1 ? "flex" : "none"}}
-                                />
-                            <img src={map_url} />
-                            {pins ? pins.map( (pin, i) => (
-                                <div onClick={() => setId(id !== i ? i : -1)}>
-                                    <CustomPin top={pin.top} left={pin.left}         
-                                        onClick={() => setId(i)}>
-                                    </CustomPin>
-                                </div>
-                            )) : null}
+                <Map>
+                    <Modal onClick={() => { if (id !== -1) { setId(-1) } }}
+                        style={{ display: id !== -1 ? "flex" : "none" }}
+                    />
+                    <Image>
+                        <Modal onClick={() => { if (id !== -1) { setId(-1) } }}
+                            style={{ display: id !== -1 ? "flex" : "none" }}
+                        />
+                        <img src={map_url} />
+                        {pins ? pins.map((pin, i) => (
+                            <div onClick={() => setId(id !== i ? i : -1)}>
+                                <CustomPin top={pin.top} left={pin.left}
+                                    onClick={() => setId(i)}>
+                                </CustomPin>
+                            </div>
+                        )) : null}
                         {id === -1 ? null : isMobile ? null : <Popup
-                                link={articles[id] ? articles[id].article_link : ""}
-                                title={articles[id] ? articles[id].article_title : ""}
-                                author={articles[id] ? articles[id].article_authors : ""}
-                                image={articles[id] ? articles[id].image_url : ""}
-                                top={pins[id] ? pins[id].top : 0}
-                                left={pins[id] ?  pins[id].left : 0}
+                            link={articles[id] ? articles[id].article_link : ""}
+                            title={articles[id] ? articles[id].article_title : ""}
+                            author={articles[id] ? articles[id].article_authors : ""}
+                            image={articles[id] ? articles[id].image_url : ""}
+                            top={pins[id] ? pins[id].top : 0}
+                            left={pins[id] ? pins[id].left : 0}
                         />}
-                        </Image>
-                        {id === -1 ? null : !isMobile ? null : <Popup
-                                link={articles[id] ? articles[id].article_link : ""}
-                                title={articles[id] ? articles[id].article_title : ""}
-                                author={articles[id] ? articles[id].article_authors : ""}
-                                image={articles[id] ? articles[id].image_url : ""}
-                                top={pins[id].top}
-                                left={pins[id].left}
-                        />}
-                    </Map>
-
+                    </Image>
+                    {id === -1 ? null : !isMobile ? null : <Popup
+                        link={articles[id] ? articles[id].article_link : ""}
+                        title={articles[id] ? articles[id].article_title : ""}
+                        author={articles[id] ? articles[id].article_authors : ""}
+                        image={articles[id] ? articles[id].image_url : ""}
+                        top={pins[id].top}
+                        left={pins[id].left}
+                    />}
+                </Map>
                 <Articles>
                     {articles.map(article => (
                         <SectionArticle
