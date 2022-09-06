@@ -7,7 +7,8 @@ import MobileNav from "../components/MobileNav";
 
 const Wrapper = styled.main`
     display: flex;
-    
+    flex-direction: column;
+
     @media (max-width: 768px) {
         flex-direction: column;
     }
@@ -33,22 +34,44 @@ const Articles = styled.div`
     }
 `;
 
+const Top = styled.div`
+    display: flex;
+    width: 100%;
+
+    @media only screen and (max-width: 768px){
+
+    }
+`;
+
+const Bottom = styled.div`
+    display: flex;
+    flex-direction: row;
+
+    @media only screen and (max-width: 768px){
+
+    }
+`;
+
 const Section = ({ articles, header }) => {
     return (
         <Wrapper>
-            <MobileNav/>
-            <NavBar/>
-            <Map><p>{header} map goes here</p></Map>
-            <Articles>
-                {articles.map(article => (
-                    <SectionArticle
-                        link={article.article_link}
-                        title={article.article_title}
-                        author={article.article_authors}
-                        image={article.image_url}
-                    />
-                ))}
-            </Articles>
+            <Top>
+                <MobileNav/>
+                <NavBar/>
+            </Top>
+            <Bottom>
+                <Map><p>{header} map goes here</p></Map>
+                <Articles>
+                    {articles.map(article => (
+                        <SectionArticle
+                            link={article.article_link}
+                            title={article.article_title}
+                            author={article.article_authors}
+                            image={article.image_url}
+                        />
+                    ))}
+                </Articles>
+            </Bottom>
         </Wrapper>
     );
 };

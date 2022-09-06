@@ -13,6 +13,7 @@ const Container = styled.div`
     padding: 0 3rem 0 0;
 
     height: 4.5rem;
+    width: 100%;
     background: ${theme.colors.darkBrown};
 
     @media only screen and (max-width: 768px){
