@@ -34,7 +34,7 @@ const Triangle = styled.div`
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     z-index: 200;
-    left: 15rem;
+    left: 16rem;
     transform: translate(-50%,0%); // anchor point at bottom of pin
     @media (max-width: 768px) {
         display: none;
