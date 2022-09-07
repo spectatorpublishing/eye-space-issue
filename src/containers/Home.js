@@ -17,9 +17,7 @@ const Wrapper = styled.main`
 `;
 
 const HomeContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-
+    background-color: ${theme.colors.lightBrown};
     @media only screen and (max-width: 768px){
 
     }
