@@ -12,6 +12,7 @@ import theme from '../theme';
 const HomeContainer = styled.div`
     display: flex;
     flex-direction: column;
+    background: ${theme.colors.tan};
 
     @media only screen and (max-width: 768px){
 
@@ -21,6 +22,7 @@ const HomeContainer = styled.div`
 const Top = styled.div`
     display: flex;
     width: 100%;
+    z-index:100;
 `;
 
 const Home = ({ }) => {
