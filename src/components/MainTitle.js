@@ -4,15 +4,40 @@ import { device } from '../device';
 import theme from '../theme';
 
 const Container = styled.div`
-    @media only screen and (max-width: 768px){
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    width: 100%;
+    margin: auto;
+    height: 65rem;
 
+    background:url(https://eye-space.s3.amazonaws.com/Main_Image_Placeholder.png);
+    background-size: cover;
+    background-position: center;
+
+    @media only screen and (max-width: 768px){
+        padding: 1rem;
+        width: 20rem;
+    }
+
+`
+
+const Title = styled.div`
+    display: flex;
+    padding-top: 20rem;
+    a {
+        color: ${theme.colors.darkBrown};
+        font-family: "Libre Baskerville";
+        font-size: 4rem;
     }
 `;
 
 const MainTitle = ({ }) => {
     return (
         <Container>
-            MainTitle
+            <Title>
+                <a>THE SPACE ISSUE</a>
+            </Title> 
         </Container>
     )
 };

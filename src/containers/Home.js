@@ -27,6 +27,7 @@ const HomeContainer = styled.div`
 const Top = styled.div`
     display: flex;
     width: 100%;
+    z-index:100;
 `;
 
 const Home = ({ }) => {
