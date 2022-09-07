@@ -8,7 +8,6 @@ import Credits from '../components/Credits';
 import NavBar from "../components/NavBar";
 import MobileNav from "../components/MobileNav";
 import theme from '../theme';
-import NavBar from '../components/NavBar';
 
 const Wrapper = styled.main`
     display: flex;
