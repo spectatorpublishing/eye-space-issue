@@ -13,7 +13,7 @@ export const morningside_heights_articles = [
     "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/whats-in-a-name-the-controversies-of-butler-library/",
     "article_title": "What’s in a name? The Controversies of Butler Library",
     "article_authors": "Lilienne Shore Kilgore-Brown",
-    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7XQ4QCNJ4JH3HC4WULIPOT44FE.png",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/WLLJ67NMP5DPBAZEAE2RQCBUGQ.jpg",
     "description": "Butler Library's contemporary controversies have centered on the mostly white and male names on the edifice—but there’s another, darker side to Butler’s history and the man that built it."
   },
   {
@@ -65,7 +65,7 @@ export const present_day_articles = [
     "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/whats-in-a-name-the-controversies-of-butler-library/",
     "article_title": "What’s in a name? The Controversies of Butler Library",
     "article_authors": "Lilienne Shore Kilgore-Brown",
-    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7XQ4QCNJ4JH3HC4WULIPOT44FE.png",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/WLLJ67NMP5DPBAZEAE2RQCBUGQ.jpg",
     "description": "Butler Library's contemporary controversies have centered on the mostly white and male names on the edifice—but there’s another, darker side to Butler’s history and the man that built it."
   },
   {
