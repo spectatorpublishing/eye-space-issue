@@ -5,12 +5,12 @@ import theme from '../theme';
 const Container = styled.div`
     display: flex;
     flex-direction: row;
-    width: 30rem;
-    height: 10rem;
+    width: 32rem;
+    height: 15rem;
     position: absolute;
     z-index: 100;
     background-color: ${theme.colors.white};
-    transform: translate(-50%, -140%); // anchor point at bottom of pin
+    transform: ${props => props.position};
     @media (max-width: 768px) {
         transform: translate(0, 0); // anchor point at bottom of pin
         margin: 1rem;
@@ -32,9 +32,7 @@ const Triangle = styled.div`
     height: 0; 
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-top: 20px solid white;
     z-index: 200;
-    top: 10rem;
     left: 15rem;
     transform: translate(-50%,0%); // anchor point at bottom of pin
     @media (max-width: 768px) {
@@ -47,8 +45,8 @@ const Image = styled.div`
     margin: auto 0 auto 0;
 
     img {
-        width: 10rem;   
-        height: 10rem;    
+        width: 16rem;   
+        height: 15rem;    
         object-fit: cover;
     }
 
@@ -85,20 +83,39 @@ const Author = styled.div`
     font-size: 0.875rem;
 `;
 
+const Description = styled.div`
+    display: block;
+    margin-top: 0.5rem;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-size: 0.9rem;
+    max-height: 7.2em;
+    line-height: 1.2em;
+
+    @media only screen and (max-width: 768px){
+        font-size: 0.875rem;
+        max-height: 3em;
+        line-height: 1em;
+    }
+`;
+
 const Column = styled.div`
     display: flex;
     flex-direction: column;
 `;
 
-const Popup = ({ link, title, author, image, top, left }) => {
+const Popup = ({ link, title, author, image, description, top, left }) => {
     let top_percent = top + "%"
     let left_percent = left + "%"
     let zero_percent = 0 + "%"
 
+    let popup_postition = top < 50 ? "bottom" : "top";
+
     return (
         <Wrapper>
             <a href={link} target="_blank">
-                <Container style={{ top: window.innerWidth <= 768 ? zero_percent : top_percent, 
+                <Container position={popup_postition === "bottom" ? "translate(-50%, 10%)" : "translate(-50%, -130%)"} style={{ top: window.innerWidth <= 768 ? zero_percent : top_percent, 
                                     left: window.innerWidth <= 768 ? zero_percent : left_percent }}>
                         <Column>
                             <Image>
@@ -108,8 +125,9 @@ const Popup = ({ link, title, author, image, top, left }) => {
                         <Text>
                             <Title>{title}</Title>
                             <Author>{author}</Author>
+                            <Description>{description}</Description>
                         </Text>
-                        <Triangle></Triangle>
+                        <Triangle position={popup_postition === "bottom" ? "" : ""} style={popup_postition === "bottom" ? {bottom: "15rem",  borderBottom: "20px solid white"} : {top: "15rem",  borderTop: "20px solid white"}}/>
                 </Container>
             </a>
         </Wrapper>

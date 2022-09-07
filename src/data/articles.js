@@ -133,7 +133,7 @@ export const present_day_articles = [
   },
   {
     "article_link": "",
-    "article_title": "Noco Research Lab",
+    "article_title": "Julia's Garden",
     "article_authors": "Yingjie Wang",
     "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/2BOM7NZVCNC5NNL2BUINT7LVVA.jpg",
     "description": "Julia’s Garden, previously known as the West 111th Street People’s Garden, is a little nook of greenery and a place of whimsy. Heading south from campus along Amsterdam Avenue, it’s really easy to walk right past while on the hunt for some tasty pastries from Hungarian. However, once you step inside its gates, you’ll find a small path winding through beds of vibrant flowers and tall trees. When the weather’s nice, I really enjoy sitting at the tables in the back of the garden and reading, sketching, or just people-watching. Sometimes there’ll even be little bird visitors! Visiting the garden always helps me take a deep breath, reset, and enjoy the sunshine. As the semester begins to pick up, I hope that you too can enjoy the garden and find within it a bit of calm and respite."
