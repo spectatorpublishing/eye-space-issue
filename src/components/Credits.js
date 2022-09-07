@@ -80,7 +80,6 @@ const Credits = ({ }) => {
             <CreditsTitle>Credits</CreditsTitle>
             <CreditsBody>
                 <Row>
-                    {/* TODO: Add in data */}
                     <SubDiv>
                         <h2>Corporate Board</h2>
                         {credits['Corporate Board'].map(person => (
