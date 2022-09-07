@@ -85,7 +85,8 @@ const Bottom = styled.div`
     }
 `;
 
-const pin_url = "https://eye-space.s3.amazonaws.com/Red_Pin.png";
+const red_pin_url = "https://eye-space.s3.amazonaws.com/Red_Pin.png";
+const blue_pin_url = "https://eye-space.s3.amazonaws.com/Blue_Pin.png";
 
 const Pin = styled.div`
     position: absolute;
@@ -107,12 +108,12 @@ const Modal = styled.div`
     position: absolute;
 `;
 
-const CustomPin = ({ id, top, left, url }) => {
+const CustomPin = ({ id, top, left }) => {
     let top_percent = top + "%"
     let left_percent = left + "%"
     return (
         <Pin style={{ top: top_percent, left: left_percent }}> 
-            <img src={pin_url} />
+            <img src={ id < 7 ? red_pin_url : blue_pin_url} />
         </Pin>
     );
 };
@@ -139,7 +140,7 @@ const Section = ({ articles, map_url, pins }) => {
                             <img src={map_url} />
                             {pins ? pins.map( (pin, i) => (
                                 <div onClick={() => setId(id !== i ? i : -1)}>
-                                    <CustomPin top={pin.top} left={pin.left}         
+                                    <CustomPin top={pin.top} left={pin.left} id={i}         
                                         onClick={() => setId(i)}>
                                     </CustomPin>
                                 </div>
