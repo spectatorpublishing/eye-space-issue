@@ -129,7 +129,7 @@ const Popup = ({ link, title, author, image, description, isIllo, top, left}) =>
                             <Author>{author}</Author>
                             <Description>{description}</Description>
                         </Text>
-                        <Triangle position={popup_postition === "bottom" ? "" : ""} style={popup_postition === "bottom" ? {bottom: "15rem",  borderBottom: "20px solid white"} : {top: "15rem",  borderTop: "20px solid white"}}/>
+                        <Triangle style={popup_postition === "bottom" ? {bottom: "15rem",  borderBottom: "20px solid white"} : {top: "15rem",  borderTop: "20px solid white"}}/>
                 </Container>
             </HashLink>
             : <a href={link} target="_blank">
@@ -145,7 +145,7 @@ const Popup = ({ link, title, author, image, description, isIllo, top, left}) =>
                             <Author>{author}</Author>
                             <Description>{description}</Description>
                         </Text>
-                        <Triangle position={popup_postition === "bottom" ? "" : ""} style={popup_postition === "bottom" ? {bottom: "15rem",  borderBottom: "20px solid white"} : {top: "15rem",  borderTop: "20px solid white"}}/>
+                        <Triangle style={popup_postition === "bottom" ? {bottom: "15rem",  borderBottom: "20px solid white"} : {top: "15rem",  borderTop: "20px solid white"}}/>
                 </Container>
             </a>}
         </Wrapper>

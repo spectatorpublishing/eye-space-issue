@@ -43,6 +43,11 @@ const Wrapper = styled.div`
     }
 
     margin: 1rem;
+    transition: transform .2s;
+
+    :hover{
+        transform: scale(1.05);
+    }
 `;
 
 const Image = styled.div`
@@ -75,11 +80,10 @@ const Text = styled.div`
         color: white;
         text-align: center;
         margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
+        margin-right: auto;
+        left: 0;
+        right: 0;
         z-index: 5;
-        left: 10%;
 
     @media only screen and (max-width: ${theme.sizes.mobile}){
         width: 15rem;
