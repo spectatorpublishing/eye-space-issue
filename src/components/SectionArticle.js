@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { HashLink } from 'react-router-hash-link';
 
 const Container = styled.div`
     display: flex;
@@ -87,13 +88,14 @@ const Column = styled.div`
     flex-direction: column;
 `;
 
-const SectionArticle = ({ link, title, author, image }) => {
+const SectionArticle = ({ link, title, author, image, isIllo }) => {
     let isMobile = window.innerWidth <= 768;
 
     if (isMobile) {
         return (
             <Wrapper>
-                <a href={link} target="_blank">
+                {isIllo ? 
+                <HashLink smooth to={'/illos#' + title.split(" ")[0]}>
                     <Container >
                         <Column>
                             <Image>
@@ -105,14 +107,41 @@ const SectionArticle = ({ link, title, author, image }) => {
                             </Image>
                         </Column>
                     </Container>
-                </a>
+                </HashLink>
+                : <a href={link} target="_blank">
+                    <Container >
+                        <Column>
+                            <Image>
+                                <img src={image} />
+                                <Text>
+                                    <Title>{title}</Title>
+                                    <Author>{author}</Author>
+                                </Text>
+                            </Image>
+                        </Column>
+                    </Container>
+                </a>}
             </Wrapper>
         )
     }
 
     return (
         <Wrapper>
-            <a href={link} target="_blank">
+            {isIllo ? 
+                <HashLink smooth to={'/illos#' + title.split(" ")[0]}>
+                    <Container>
+                    <Column>
+                        <Image>
+                            <img src={image} />
+                        </Image>
+                    </Column>
+                    <Text>
+                        <Title>{title}</Title>
+                        <Author>{author}</Author>
+                    </Text>
+                </Container>
+                </HashLink>
+            : <a href={link} target="_blank">
                 <Container>
                     <Column>
                         <Image>
@@ -124,7 +153,7 @@ const SectionArticle = ({ link, title, author, image }) => {
                         <Author>{author}</Author>
                     </Text>
                 </Container>
-            </a>
+            </a>}
         </Wrapper>
     )
 };

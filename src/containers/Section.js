@@ -175,6 +175,7 @@ const Section = ({ articles, map_url, pins }) => {
                             title={article.article_title}
                             author={article.article_authors}
                             image={article.image_url}
+                            isIllo={article.isIllo}
                         />
                     ))}
                 </Articles>

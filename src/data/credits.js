@@ -10,6 +10,18 @@ export const credits = {
           "title": "Head of Engineering"
         },
         {
+          "staff_name": "Yu-Chen Huang",
+          "title": "Engineering Manager"
+        },
+        {
+          "staff_name": "Francesca Cavuoti",
+          "title": "Engineering Manager"
+        },
+        {
+          "staff_name": "Cindy Zhu",
+          "title": "Engineering Manager"
+        },
+        {
           "staff_name": "Philippe Wu",
           "title": "Head of Product"
         },

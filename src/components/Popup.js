@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import theme from '../theme';
-import { NavHashLink } from 'react-router-hash-link';
 import { HashLink } from 'react-router-hash-link';
 
 const Container = styled.div`

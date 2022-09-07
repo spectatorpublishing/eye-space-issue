@@ -85,9 +85,12 @@ const Credits = ({ }) => {
                         {credits['Corporate Board'].map(person => (
                             <p>{person.staff_name}, {person.title}</p>
                         ))}
-                        
-                         <h2>Photo</h2>
-                        {credits['Photo'].map(person => (
+                        <h2>The Eye</h2>
+                        {credits['The Eye'].map(person => (
+                            <p>{person.staff_name}, {person.title}</p>
+                        ))}
+                         <h2>Engagement</h2>
+                        {credits['Engagement'].map(person => (
                             <p>{person.staff_name}, {person.title}</p>
                         ))}
                     </SubDiv>
@@ -96,22 +99,18 @@ const Credits = ({ }) => {
                         {credits['Design and Development'].map(person => (
                             <p>{person.staff_name}, {person.title}</p>
                         ))}
-                        <h2>Illustrations</h2>
-                        {credits['Illustrations'].map(person => (
-                            <p>{person.staff_name}, {person.title}</p>
-                        ))}
                        <h2>Copy</h2>
                         {credits['Copy'].map(person => (
                             <p>{person.staff_name}, {person.title}</p>
                         ))}
                     </SubDiv>
                     <SubDiv>
-                        <h2>The Eye</h2>
-                        {credits['The Eye'].map(person => (
+                    <h2>Illustrations</h2>
+                        {credits['Illustrations'].map(person => (
                             <p>{person.staff_name}, {person.title}</p>
                         ))}
-                        <h2>Engagement</h2>
-                        {credits['Engagement'].map(person => (
+                        <h2>Photo</h2>
+                        {credits['Photo'].map(person => (
                             <p>{person.staff_name}, {person.title}</p>
                         ))}
                     </SubDiv>
