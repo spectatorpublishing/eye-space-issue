@@ -9,10 +9,6 @@ export const sections = [
         url: "/lenape-land",
     },
     {
-        title: "Columbia University",
-        url: "/columbia",
-    },
-    {
         title: "Off Campus",
         url: "/off-campus",
     },
