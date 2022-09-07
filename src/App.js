@@ -38,7 +38,7 @@ const App = () => {
                 "https://eye-space.s3.amazonaws.com/Columbia_Map_Cropped.png" :
                 "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/WXWTQLERNVD7XCDIGHFXGFXZZI.png"}
               pins={isMobile ? present_day_pins_mobile : present_day_pins}/>} />
-        <Route path="/illos" element={<Illos/>}/>
+        <Route exact path="/illos" element={<Illos/>}/>
       </Routes>
     </BrowserRouter>
   );

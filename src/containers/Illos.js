@@ -39,7 +39,7 @@ const Description = styled.div`
     line-height: 1.5rem;
 `
 
-const Illo = ({location, image, illustrator, description}) => {
+const Illo = ({id, location, image, illustrator, description}) => {
     return (
         <IlloWrapper>
             <Location>{location}</Location>
@@ -54,13 +54,14 @@ const Illos = ({ }) => {
     return (
         <Wrapper>
            {illos.map((illo, id) => (
+               <div id={illo.article_title.split(" ")[0]}>
                <Illo
-                id={String.valueOf(id)}
                 location={illo.article_title}
                 image={illo.image_url}
                 illustrator={illo.article_authors}
                 description={illo.description}
                />
+               </div>
            ))}
         </Wrapper>
     )
