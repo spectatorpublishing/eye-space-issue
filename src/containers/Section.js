@@ -85,8 +85,8 @@ const Bottom = styled.div`
     }
 `;
 
-const red_pin_url = "https://eye-space.s3.amazonaws.com/Red_Pin.png";
-const blue_pin_url = "https://eye-space.s3.amazonaws.com/Blue_Pin.png";
+const red_pin_url = "https://eye-space.s3.amazonaws.com/Blue_Pin.png";
+const blue_pin_url = "https://eye-space.s3.amazonaws.com/Red_Pin.png";
 
 const Pin = styled.div`
     position: absolute;
