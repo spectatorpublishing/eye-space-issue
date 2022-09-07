@@ -21,7 +21,8 @@ const theme = {
       articleTitleBlue: "#698FC9",
       lightBrown:"#4A25135C",
       darkBrown:"#4A2513",
-      tan:"#EEE7DF"
+      tan:"#EEE7DF",
+      titleBlack: "#4A2513",
     },
     sizes: {
       mobile: "767px",

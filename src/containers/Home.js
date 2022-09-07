@@ -9,13 +9,18 @@ import NavBar from "../components/NavBar";
 import MobileNav from "../components/MobileNav";
 import theme from '../theme';
 
+const Wrapper = styled.main`
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+`;
+
 const HomeContainer = styled.div`
     display: flex;
     flex-direction: column;
-    background: ${theme.colors.tan};
-
+    background-color: ${theme.colors.tan};
     @media only screen and (max-width: 768px){
-
     }
 `;
 
@@ -27,16 +32,18 @@ const Top = styled.div`
 
 const Home = ({ }) => {
     return (
-        <HomeContainer>
+        <Wrapper>
             <Top>
                 <MobileNav/>
                 <NavBar/>
             </Top>
-            <MainTitle/>
-            <LetterEditor/>
-            <AllArticles/>
-            <Credits/>
-        </HomeContainer>
+            <HomeContainer>
+                <MainTitle/>
+                <LetterEditor/>
+                <AllArticles/>
+                <Credits/>
+            </HomeContainer>
+        </Wrapper>
     )
 };
 

@@ -13,7 +13,6 @@ const Container = styled.div`
     width: 100%;
     @media only screen and (min-width: 768px){
         display: none;
-
     }
 `;
 
@@ -40,6 +39,10 @@ const MenuItem = styled.div`
 `;
 
 const EyeLogo = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     height: 5rem;
     width: 5rem;
 
@@ -59,6 +62,7 @@ const CurrentTab = styled.div`
     font-family: "Libre Baskerville";
     font-size: 1.25rem;
     padding-top: 0.75rem;
+    margin-left: 6rem;
 `;
 
 const MobileNav = ({ }) => {

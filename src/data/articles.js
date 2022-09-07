@@ -1,143 +1,155 @@
 export const lenape_articles = [
-    {
-      "article_link": "https://www.columbiaspectator.com/news/2022/08/23/despite-rise-in-media-coverage-local-crime-remains-relatively-low/",
-      "article_title": "Despite rise in media coverage, local crime remains relatively low",
-      "article_authors": "Claire Cleary",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/W4KY5UHW7VD5NIT7NPA6YGE2W4.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/news/2022/08/23/in-the-face-of-weakened-gun-control-local-advocates-turn-to-education-and-regulation/",
-      "article_title": "In the face of weakened gun control, local advocates turn to education and regulation",
-      "article_authors": "Grace Kaste",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/LSK34V63C5BADEJUYCHNOXYMGA.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/news/2022/08/23/after-dramatic-budget-cuts-west-harlem-schools-struggle-to-prepare-for-an-uncertain-year/",
-      "article_title": "After dramatic budget cuts, West Harlem schools struggle to prepare for an uncertain year",
-      "article_authors": "Erica Lee",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/6UGC4UFLKZFKRKMY6KPIK4EW5E.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/news/2022/08/23/el-centro-uses-dominican-culture-to-help-west-harlem-residents-fight-displacement/",
-      "article_title": "El Centro uses Dominican culture to help West Harlem residents fight displacement",
-      "article_authors": "Samantha Sanchez",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7DKJUD7WMVAYHLJNLHMQRPTBYM.jpg"
-    }
-  ];
+  {
+    "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/the-lenape-of-manahatta-a-struggle-for-acknowledgement/",
+    "article_title": "The Lenape of Manahatta: A Struggle for Acknowledgement",
+    "article_authors": "Ann Vettikkal",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/T24FKDCMGJAXRHIFA2R52JRCFQ.jpeg",
+    "description": "Six years ago, Columbia acknowledged the University’s role in displacing the Lenape for the first time. Searching for the specifics of their displacement in institutional documentation reveals a history of erasure, slavery, and neglect."
+  }
+];
 
-export const columbia_articles = [
-    {
-      "article_link": "https://www.columbiaspectator.com/news/2022/08/18/columbia-to-offer-dual-masters-degrees-in-business-administration-engineering/",
-      "article_title": "Columbia to offer dual master's degrees in business administration, engineering",
-      "article_authors": "Sophia Cordoba",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/OEGSYEWUYRE6JERM2CTLRKCKG4.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/news/2022/08/18/columbia-global-centers-reorganizes-structure-brings-in-new-leadership/",
-      "article_title": "Columbia Global Centers reorganizes structure, brings in new leadership",
-      "article_authors": "Jacob Randall",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/TIWMBXOV3VCOBI67AUZ5UU333E.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/news/2022/08/17/reproductive-justice-collective-advocates-for-on-campus-medication-abortion/",
-      "article_title": "Reproductive Justice Collective advocates for on-campus medication abortion",
-      "article_authors": "Carrie Crespino And Driscoll Callan",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/SHITB3NFCFCIPEE4VVRKYCTRUQ.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/news/2022/08/11/wallach-gaming-lounge-to-open-this-fall/",
-      "article_title": "Wallach gaming lounge to open this fall",
-      "article_authors": "Ayaan Ali",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/MC7AJSCQ4NFYHIIURKHUQDSSXM.JPG"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/news/2022/08/17/ivy-league-endowments-expected-to-tumble-according-to-new-report/",
-      "article_title": "Ivy League endowments expected to tumble, according to new report",
-      "article_authors": "Shea Vance",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/26WVN5E6M5HV5FHL4VCVNQUK34.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/news/2022/08/18/record-high-285-barnard-students-participate-in-2022-summer-research-institute/",
-      "article_title": "Record-high 285 Barnard students participate in 2022 Summer Research Institute",
-      "article_authors": "Fatimah Khan",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/FLM7J2DIIBAI7BS22JJLGUMLJQ.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/news/2022/08/17/columbia-housing-to-welcome-over-6000-residents-this-year-raising-longstanding-space-concerns/",
-      "article_title": "Columbia Housing to welcome over 6,000 residents this year, raising longstanding space concerns",
-      "article_authors": "Nicole Wong",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/L45BLLOBNJAALH5EBVN5A7D7YA.JPG"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/news/2022/08/22/nsop-immersion-programs-restructured-no-longer-optional/",
-      "article_title": "NSOP Immersion Programs restructured, no longer optional",
-      "article_authors": "Ariel Yu",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7KNBYRGLSFDARDIHFJWHPTASEU.jpg"
-    }
-  ];
-
-export const off_campus_articles = [
-    {
-      "article_link": "https://www.columbiaspectator.com/arts-and-entertainment/2022/08/18/theres-a-new-rivr-flowingand-its-on-your-phone/",
-      "article_title": "There's a new RivR flowing—and it's on your phone",
-      "article_authors": "Abigail Langer",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ORPDFLLNDNGN3LFHYBCVQG2HS4.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/arts-and-entertainment/2022/08/19/artcrawl-harlem-uplifts-harlems-artists-with-2022-residency-program/",
-      "article_title": "ArtCrawl Harlem uplifts Harlem's artists with 2022 Residency Program",
-      "article_authors": "Isha Malaviya",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/HM5DXMRCTNDHZHER6745HPO4OQ.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/arts-and-entertainment/2022/08/22/sustainable-fashion-advocate-tiara-sudijono-bc-27-spreads-awareness-with-your-clothes/",
-      "article_title": "Sustainable fashion advocate Tiara Sudijono, BC '27, spreads awareness with Y[our] Clothes",
-      "article_authors": "Kopal Anand",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/U3SHKQSVYVHUDFIJ4UXFIZKR5I.JPEG"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/arts-and-entertainment/2022/08/23/bringing-back-urban-swimming-to-manhattan-a-deep-dive-into-the-plus-pool-project/",
-      "article_title": "Bringing back urban swimming to Manhattan: A deep dive into the Plus Pool project",
-      "article_authors": "Amy Xiaoqian Chen",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/P6JFFM76R5GRFJGKMP4NUK6NA4.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/arts-and-entertainment/2022/08/23/just-us-joining-rankines-american-conversation/",
-      "article_title": "Just Us: Joining Rankine's American Conversation",
-      "article_authors": "Remi Seamon",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/AGJIJKW7PJH6TDIJIPADBW5HDE.jpg"
-    }
-  ];
+export const morningside_heights_articles = [
+  {
+    "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/whats-in-a-name-the-controversies-of-butler-library/",
+    "article_title": "What’s in a name? The Controversies of Butler Library",
+    "article_authors": "Lilienne Shore Kilgore-Brown",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/WLLJ67NMP5DPBAZEAE2RQCBUGQ.jpg",
+    "description": "Butler Library's contemporary controversies have centered on the mostly white and male names on the edifice—but there’s another, darker side to Butler’s history and the man that built it."
+  },
+  {
+    "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/morningside-park-and-the-people-who-love-it/",
+    "article_title": "Morningside Park and the People Who Love It",
+    "article_authors": "Isabella Noonen",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7XQ4QCNJ4JH3HC4WULIPOT44FE.png",
+    "description": "Columbia and Morningside Park have been neighbors for more than a century. It’s never been the easiest relationship."
+  },
+  {
+    "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/getting-a-room-how-a-barnard-student-transformed-columbias-dorms/",
+    "article_title": "Getting a Room: How a Barnard Student Transformed Columbia’s Dorms",
+    "article_authors": "Annie Cheng & Lilienne Shore Kilgore-Brown",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/OAQKD4BAERFKLB3RXIKOWMJOF4.jpg",
+    "description": "She was expelled from Barnard in 1968 for living with her boyfriend. Read Grace LeClair's story: one that spurred the rapid evolution of Columbia’s residential spaces in the late 20th century."
+  },
+  {
+    "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/overruled-the-gay-lounge/",
+    "article_title": "Overruled: The Gay Lounge",
+    "article_authors": "Jonathan Truong",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/BONTFFLVCZFOFHDWKXQRYKW3OM.jpeg",
+    "description": "Once a storage closet in the Furnald Hall basement, Columbia’s Stephen Donaldson Lounge went on to become the first LGBTQ student lounge in the nation."
+  },
+  {
+    "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/the-lerner-story/",
+    "article_title": "The Lerner Story",
+    "article_authors": "Caelan Bailey",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/O3FMPESPDZB6BMXT5B622RF7M4.png",
+    "description": "Lerner Hall was “meant to serve as a hi-tech version of Low Library steps on a Spring day.” Beyond Lerner’s ramps, the history of Columbia's student centers tell a story of space, competition, and disconnect."
+  },
+  {
+    "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/tunnel-vision/",
+    "article_title": "Tunnel Vision",
+    "article_authors": "Isabella Aldrete",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/M6EVA4M3YNHBBOHU7HN462W7D4.jpg",
+    "description": "Ghosts, asylums, secret gatherings: the tunnels underneath Columbia University seem ripped out of the pages of a gothic novel. But they’re real and full of a deep, complex history—older than campus itself."
+  }
+];
 
 export const present_day_articles = [
-    {
-      "article_link": "https://www.columbiaspectator.com/opinion/2022/08/19/if-barnard-responds-to-the-challenge-of-the-womens-movement-then-where-are-our-abortion-pills/",
-      "article_title": "If Barnard “responds to the challenge of the women's movement,” then where are our abortion pills?",
-      "article_authors": "Diya Nair",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/3OHESTEOGVDQRKIVDVX3E4YT4I.JPG"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/opinion/2022/08/18/why-columbia-because-i-can-read-and-still-escape-my-country/",
-      "article_title": "Why Columbia? Because I can read and still “escape” my country",
-      "article_authors": "Arielle Rosenthal",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/P64JBF32KVFDXF72K7XYG454UY.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/opinion/2022/08/23/for-documented-dreamers-to-keep-dreaming-new-opportunities-must-arise/",
-      "article_title": "For documented Dreamers to keep dreaming, new opportunities must arise",
-      "article_authors": "Shreya Khullar",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/YJQA5ZOHVNEAVDNCEEBG65R5KU.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/opinion/2022/08/23/a-poets-plea-for-the-sciences/",
-      "article_title": "A poet's plea for the sciences",
-      "article_authors": "Phoebe Weinstein",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/A2OWUM7VERHHBDEZ6PXBU7LSEM.jpg"
-    },
-    {
-      "article_link": "https://www.columbiaspectator.com/opinion/2022/08/23/why-columbias-sustainability-plan-needs-a-drastic-revision/",
-      "article_title": "Why Columbia's sustainability plan needs a drastic revision",
-      "article_authors": "Mingyang Sky Sun",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/OEUGV4DXWBFD5INECWCVYI6SYE.JPG"
-    }
-  ];
+  {
+    "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/the-lenape-of-manahatta-a-struggle-for-acknowledgement/",
+    "article_title": "The Lenape of Manahatta: A Struggle for Acknowledgement",
+    "article_authors": "Ann Vettikkal",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/T24FKDCMGJAXRHIFA2R52JRCFQ.jpeg",
+    "description": "Six years ago, Columbia acknowledged the University’s role in displacing the Lenape for the first time. Searching for the specifics of their displacement in institutional documentation reveals a history of erasure, slavery, and neglect."
+  },
+  {
+    "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/whats-in-a-name-the-controversies-of-butler-library/",
+    "article_title": "What’s in a name? The Controversies of Butler Library",
+    "article_authors": "Lilienne Shore Kilgore-Brown",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/WLLJ67NMP5DPBAZEAE2RQCBUGQ.jpg",
+    "description": "Butler Library's contemporary controversies have centered on the mostly white and male names on the edifice—but there’s another, darker side to Butler’s history and the man that built it."
+  },
+  {
+    "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/morningside-park-and-the-people-who-love-it/",
+    "article_title": "Morningside Park and the People Who Love It",
+    "article_authors": "Isabella Noonen",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7XQ4QCNJ4JH3HC4WULIPOT44FE.png",
+    "description": "Columbia and Morningside Park have been neighbors for more than a century. It’s never been the easiest relationship."
+  },
+  {
+    "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/getting-a-room-how-a-barnard-student-transformed-columbias-dorms/",
+    "article_title": "Getting a Room: How a Barnard Student Transformed Columbia’s Dorms",
+    "article_authors": "Annie Cheng & Lilienne Shore Kilgore-Brown",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/OAQKD4BAERFKLB3RXIKOWMJOF4.jpg",
+    "description": "She was expelled from Barnard in 1968 for living with her boyfriend. Read Grace LeClair's story: one that spurred the rapid evolution of Columbia’s residential spaces in the late 20th century."
+  },
+  {
+    "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/overruled-the-gay-lounge/",
+    "article_title": "Overruled: The Gay Lounge",
+    "article_authors": "Jonathan Truong",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/BONTFFLVCZFOFHDWKXQRYKW3OM.jpeg",
+    "description": "Once a storage closet in the Furnald Hall basement, Columbia’s Stephen Donaldson Lounge went on to become the first LGBTQ student lounge in the nation."
+  },
+  {
+    "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/the-lerner-story/",
+    "article_title": "The Lerner Story",
+    "article_authors": "Caelan Bailey",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/O3FMPESPDZB6BMXT5B622RF7M4.png",
+    "description": "Lerner Hall was “meant to serve as a hi-tech version of Low Library steps on a Spring day.” Beyond Lerner’s ramps, the history of Columbia's student centers tell a story of space, competition, and disconnect."
+  },
+  {
+    "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/tunnel-vision/",
+    "article_title": "Tunnel Vision",
+    "article_authors": "Isabella Aldrete",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/M6EVA4M3YNHBBOHU7HN462W7D4.jpg",
+    "description": "Ghosts, asylums, secret gatherings: the tunnels underneath Columbia University seem ripped out of the pages of a gothic novel. But they’re real and full of a deep, complex history—older than campus itself."
+  },
+  {
+    "article_link": "",
+    "article_title": "Avery Arches",
+    "article_authors": "Kelsea Petersen",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/5226S4HDCRGF5EZEMXHOZ7EITM.JPEG",
+    "description": "I chose the Avery arches because, while also providing some beautiful lighting in the library, when I went there to read the “Iliad” during NSOP my first year, it was the first time I felt like a college student! It felt full circle to illustrate them on the one-year anniversary of coming to Columbia."
+  },
+  {
+    "article_link": "",
+    "article_title": "Earl Hall Steps",
+    "article_authors": "Chiara Guigou",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/3UFM2KWV4JGVRG7PEISH733XZY.JPG",
+    "description": "I first discovered the entrance of Earl Hall during the first meeting of Artists Reaching Out, a wonderful association that I am grateful to be a part of. I had just started my first semester at Columbia, and getting involved in clubs and activities on campus was pretty challenging. Yet, getting to know the people of Artists Reaching Out and discussing our shared interests in art, education, and teaching felt surprisingly easy. I always believed that the setting was a factor in how great my first impression of community service at Columbia was. The summer breeze under the trees and the light that was bathing the steps of Earl Hall definitely contributed to my enjoyment of campus, and made it feel a bit more like home."
+  },
+  {
+    "article_link": "",
+    "article_title": "Barnard Design Center",
+    "article_authors": "Sadia Sharif",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/L5KQPEL5BFDJDFGZ7UECPKSQIQ.png",
+    "description": "The Design Center at Barnard—a place with good vibes and fun crafts! I wanted to capture the different friends I went with this past year and the kinds of projects we worked on together, such as paper marbling and designing shirts. Delia and Yisel, the two right above the door, are two of the many awesome people who will help guide you in your projects and answer any questions if needed. I hope that during your time here you can consider yourself a “maker” and design something of your own at the Design Center!"
+  },
+  {
+    "article_link": "",
+    "article_title": "Noco Research Lab",
+    "article_authors": "Julian Michaud",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/A7DY25BWORGOTGCWJS3TDXPL34.png",
+    "description": "I chose to illustrate the view from the lab in the Northwest Corner Building where I work. It’s difficult to see this far uptown from most buildings on campus, so I appreciate having another view of the city."
+  },
+  {
+    "article_link": "",
+    "article_title": "Julia's Garden",
+    "article_authors": "Yingjie Wang",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/2BOM7NZVCNC5NNL2BUINT7LVVA.jpg",
+    "description": "Julia’s Garden, previously known as the West 111th Street People’s Garden, is a little nook of greenery and a place of whimsy. Heading south from campus along Amsterdam Avenue, it’s really easy to walk right past while on the hunt for some tasty pastries from Hungarian. However, once you step inside its gates, you’ll find a small path winding through beds of vibrant flowers and tall trees. When the weather’s nice, I really enjoy sitting at the tables in the back of the garden and reading, sketching, or just people-watching. Sometimes there’ll even be little bird visitors! Visiting the garden always helps me take a deep breath, reset, and enjoy the sunshine. As the semester begins to pick up, I hope that you too can enjoy the garden and find within it a bit of calm and respite."
+  },
+  {
+    "article_link": "",
+    "article_title": "Lawn Outside Kent and Philosophy",
+    "article_authors": "Taylor Yingshi",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/PEOWPU5ZIRHBLK2RIO6ASVK2J4.png",
+    "description": "This piece depicts the lawn outside Kent and Philosophy halls. My friends and I used to sit here and have picnics or do homework—it’s an idyllic location that I really love!"
+  },
+  {
+    "article_link": "",
+    "article_title": "Diana 6th Floor",
+    "article_authors": "Ji Yoon Sim",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/42PDESIWFNFCPCOHV7SRDW5IE4.jpg",
+    "description": "When you press on the button for the sixth floor in the Diana Center elevator, the doors open up to just a small study lounge with a beautiful mural on one side and a window wall with a view of campus. In between are couches and tables where students can do their work with friends. During the day, the tables are almost always occupied. However, as an architecture student who spends late nights and early mornings in the studios on the fourth floor of Diana, the sixth floor study lounge is my favorite place to take a break and relax, or even take a nap on the sofas! Being in there all alone during sunrise and watching the buildings through the window glow orange gives a strange yet peaceful feeling that I will never forget."
+  }
+];
