@@ -5,8 +5,9 @@ import MainTitle from '../components/MainTitle';
 import LetterEditor from '../components/LetterEditor';
 import AllArticles from '../components/AllArticles';
 import Credits from '../components/Credits';
+import NavBar from "../components/NavBar";
+import MobileNav from "../components/MobileNav";
 import theme from '../theme';
-import NavBar from '../components/NavBar';
 
 const Wrapper = styled.main`
     display: flex;
@@ -16,15 +17,26 @@ const Wrapper = styled.main`
 `;
 
 const HomeContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+
     @media only screen and (max-width: 768px){
 
     }
 `;
 
+const Top = styled.div`
+    display: flex;
+    width: 100%;
+`;
+
 const Home = ({ }) => {
     return (
         <Wrapper>
-            <NavBar/>
+            <Top>
+                <MobileNav/>
+                <NavBar/>
+            </Top>
             <HomeContainer>
                 <MainTitle/>
                 <LetterEditor/>

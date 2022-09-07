@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import theme from '../theme';
 import SectionArticle from '../components/SectionArticle';
+import NavBar from "../components/NavBar";
+import MobileNav from "../components/MobileNav";
 import Popup from '../components/Popup';
-import NavBar from '../components/NavBar';
 
 const Wrapper = styled.main`
     display: flex;
@@ -70,6 +71,20 @@ const Articles = styled.div`
     }
 `;
 
+const Top = styled.div`
+    display: flex;
+    width: 100%;
+`;
+
+const Bottom = styled.div`
+    display: flex;
+    flex-direction: row;
+
+    @media only screen and (max-width: 768px){
+
+    }
+`;
+
 const pin_url = "https://eye-space.s3.amazonaws.com/Red_Pin.png";
 
 const Pin = styled.div`
@@ -102,14 +117,16 @@ const CustomPin = ({ id, top, left, url }) => {
     );
 };
 
-
 const Section = ({ articles, map_url, pins }) => {
 	const [ id, setId ] = useState(-1);
     let isMobile = window.innerWidth <= 768;
 
     return (
         <Wrapper>
-            <NavBar/>
+            <Top>
+                <MobileNav/>
+                <NavBar/>
+            </Top>
             <SectionContainer>
                     <Map>
                         <Modal onClick={() => { if (id !== -1) {setId(-1)}}}
