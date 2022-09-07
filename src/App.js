@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import Home from './containers/Home';
 import Section from "./containers/Section";
+import Illos from "./containers/Illos";
 import { lenape_articles, morningside_heights_articles, present_day_articles } from "./data/articles";
 import { lenape_pins, morningside_heights_pins, present_day_pins, present_day_pins_mobile} from "./data/pins";
 
@@ -37,6 +38,7 @@ const App = () => {
                 "https://eye-space.s3.amazonaws.com/Columbia_Map_Cropped.png" :
                 "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/WXWTQLERNVD7XCDIGHFXGFXZZI.png"}
               pins={isMobile ? present_day_pins_mobile : present_day_pins}/>} />
+        <Route path="/illos" element={<Illos/>}/>
       </Routes>
     </BrowserRouter>
   );

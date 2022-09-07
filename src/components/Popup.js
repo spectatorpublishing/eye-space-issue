@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import theme from '../theme';
+import { NavHashLink } from 'react-router-hash-link';
 
 const Container = styled.div`
     display: flex;
@@ -105,7 +106,7 @@ const Column = styled.div`
     flex-direction: column;
 `;
 
-const Popup = ({ link, title, author, image, description, top, left }) => {
+const Popup = ({ link, title, author, image, description, isIllo, top, left}) => {
     let top_percent = top + "%"
     let left_percent = left + "%"
     let zero_percent = 0 + "%"
@@ -114,7 +115,8 @@ const Popup = ({ link, title, author, image, description, top, left }) => {
 
     return (
         <Wrapper>
-            <a href={link} target="_blank">
+            {isIllo ? 
+            <NavHashLink to={link} target="_blank">
                 <Container position={popup_postition === "bottom" ? "translate(-50%, 10%)" : "translate(-50%, -130%)"} style={{ top: window.innerWidth <= 768 ? zero_percent : top_percent, 
                                     left: window.innerWidth <= 768 ? zero_percent : left_percent }}>
                         <Column>
@@ -129,7 +131,23 @@ const Popup = ({ link, title, author, image, description, top, left }) => {
                         </Text>
                         <Triangle position={popup_postition === "bottom" ? "" : ""} style={popup_postition === "bottom" ? {bottom: "15rem",  borderBottom: "20px solid white"} : {top: "15rem",  borderTop: "20px solid white"}}/>
                 </Container>
-            </a>
+            </NavHashLink>
+            : <a href={link} target="_blank">
+                <Container position={popup_postition === "bottom" ? "translate(-50%, 10%)" : "translate(-50%, -130%)"} style={{ top: window.innerWidth <= 768 ? zero_percent : top_percent, 
+                                    left: window.innerWidth <= 768 ? zero_percent : left_percent }}>
+                        <Column>
+                            <Image>
+                                <img src={image} />
+                            </Image>
+                        </Column>
+                        <Text>
+                            <Title>{title}</Title>
+                            <Author>{author}</Author>
+                            <Description>{description}</Description>
+                        </Text>
+                        <Triangle position={popup_postition === "bottom" ? "" : ""} style={popup_postition === "bottom" ? {bottom: "15rem",  borderBottom: "20px solid white"} : {top: "15rem",  borderTop: "20px solid white"}}/>
+                </Container>
+            </a>}
         </Wrapper>
     )
 };

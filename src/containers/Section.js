@@ -151,6 +151,7 @@ const Section = ({ articles, map_url, pins }) => {
                                 author={articles[id] ? articles[id].article_authors : ""}
                                 image={articles[id] ? articles[id].image_url : ""}
                                 description={articles[id] ? articles[id].description : ""}
+                                isIllo={articles[id].isIllo}
                                 top={pins[id] ? pins[id].top : 0}
                                 left={pins[id] ?  pins[id].left : 0}
                         />}
@@ -161,6 +162,7 @@ const Section = ({ articles, map_url, pins }) => {
                                 author={articles[id] ? articles[id].article_authors : ""}
                                 image={articles[id] ? articles[id].image_url : ""}
                                 description={articles[id] ? articles[id].description : ""}
+                                isIllo={articles[id].isIllo}
                                 top={pins[id] ? pins[id].top : 0}
                                 left={pins[id] ?  pins[id].left : 0}
                         />}
