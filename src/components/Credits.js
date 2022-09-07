@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { device } from '../device';
 import theme from '../theme';
+import { credits } from '../data/credits';
 
 const Container = styled.div`
     display: flex;
@@ -37,7 +38,7 @@ const CreditsTitle = styled.div`
 `;
 
 const CreditsBody = styled.div`
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
 
@@ -48,11 +49,12 @@ const CreditsBody = styled.div`
         font-size: 1.2rem;
         padding: .5rem 0 0;
     }
+
     p {
         font-family: "Barlow";
         font-weight: 400;
         font-size: 1.2rem;
-        line-height: .5rem;
+        line-height: 1.2rem;
     }
 `;
 
@@ -81,28 +83,38 @@ const Credits = ({ }) => {
                     {/* TODO: Add in data */}
                     <SubDiv>
                         <h2>Corporate Board</h2>
-                        <p>Name 1</p>
-                        <p>Name 2</p>
+                        {credits['Corporate Board'].map(person => (
+                            <p>{person.staff_name}, {person.title}</p>
+                        ))}
+                        
+                         <h2>Photo</h2>
+                        {credits['Photo'].map(person => (
+                            <p>{person.staff_name}, {person.title}</p>
+                        ))}
                     </SubDiv>
                     <SubDiv>
-                        <h2>Corporate Board</h2>
-                        <p>Name 1</p>
+                        <h2>Design and Development</h2>
+                        {credits['Design and Development'].map(person => (
+                            <p>{person.staff_name}, {person.title}</p>
+                        ))}
+                        <h2>Illustrations</h2>
+                        {credits['Illustrations'].map(person => (
+                            <p>{person.staff_name}, {person.title}</p>
+                        ))}
+                       <h2>Copy</h2>
+                        {credits['Copy'].map(person => (
+                            <p>{person.staff_name}, {person.title}</p>
+                        ))}
                     </SubDiv>
                     <SubDiv>
-                        <h2>Corporate Board</h2>
-                        <p>Name 1</p>
-                    </SubDiv>
-                    <SubDiv>
-                        <h2>Corporate Board</h2>
-                        <p>Name 1</p>
-                    </SubDiv>
-                    <SubDiv>
-                        <h2>Corporate Board</h2>
-                        <p>Name 1</p>
-                    </SubDiv>
-                    <SubDiv>
-                        <h2>Corporate Board</h2>
-                        <p>Name 1</p>
+                        <h2>The Eye</h2>
+                        {credits['The Eye'].map(person => (
+                            <p>{person.staff_name}, {person.title}</p>
+                        ))}
+                        <h2>Engagement</h2>
+                        {credits['Engagement'].map(person => (
+                            <p>{person.staff_name}, {person.title}</p>
+                        ))}
                     </SubDiv>
                 </Row>
             </CreditsBody>
