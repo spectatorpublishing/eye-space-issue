@@ -52,21 +52,23 @@ const BodyContainer = styled.div`
     margin: 0;
     transition: all ease-in-out .5s;
     border-top: 2px solid ${theme.colors.darkBrown};
+    
     @media only screen and (max-width: ${theme.sizes.mobile}){
         padding: 1rem;
     }
 `;
 
 const BodyText = styled.p`
-    text-align: center;
+    text-align: left;
     @media only screen and (max-width: ${theme.sizes.mobile}){
         text-align: left;
+        font-size: 2rem;
     }
 `;
 
 const CreditsWrapper = styled.div`
     align-self: flex-start;
-    padding-top: 3rem;
+    padding-top: 0rem;
 `;
 
 const Credit = styled.h3`
@@ -100,12 +102,26 @@ const LetterEditor = ({ }) => {
                 </Arrow>
             </TitleContainer>
             <BodyContainer open={isOpen}>
-                <BodyText>{PLACEHOLDER}</BodyText>
+                <BodyText>
+                <p>Dear readers,</p>
+
+                <p>Welcome to the Space Issue! This special project, presented by The Eye’s inaugural Archival Team, was borne of a curious urge to destabilize the limestone-and-brick solidity of Columbia’s campus. The halls we walk, the parks we enter (or don’t), the dorms and lounges we find community in—behind all of these seemingly-steady spaces are rich histories of activism, administrative strife, and constant renegotiations. Who is allowed to take up space on campus? Where does Columbia fit into the neighboring community? Why are we here?</p>
+
+                <p>To explore these questions and uncover many more, our reporters have ventured into the depths of the archives, unfurling architectural spreads still marked with faded pencil notes and following the paper trails of past University presidents. From famous buildings like Butler Library and Lerner Hall, to integral community spaces like Morningside Park, the Stephen Donaldson LGBTQ Lounge, and the labyrinthine tunnels underground, we sought to understand how spaces on and around campus came to be and how they might evolve in the future. Allow us to transport you across a 268-year history as we draw out the dynamism behind Columbia’s campus through seven feature-length articles and a set of interactive archival maps.</p>
+
+                <p>Before embarking on this journey, we must acknowledge that the Space Issue is just as much about what the archives can’t tell us as what they can. Midway through working on the issue this summer, we realized that in focusing on the “official” archives maintained by Spectator and the University, we had neglected to cover the biggest issue of space in Columbia’s history: the stolen Lenni-Lenape land upon which Columbia was built.</p>
+
+                <p>Staff Writer Ann Vettikkal stepped up to research a history of Indigenous displacement scarcely documented; in her story, she centers the violent indifference of institutional memory by examining gaps in the archives. When building our interactive map display, we were faced with the challenge of situating the history of Indigenous land on an archival map. It was important for us to represent the foundational history of the land beneath the constructions of colonizers and their beneficiaries—but we couldn’t find any maps in the archives that visualized Manhattan in its original, uncolonized form. We realized the inherent restrictions of an archival approach when the archives themselves are colonized space, built to house a limited history while papering over others.</p>
+
+                <p>In the face of archival limitations, our reporters have also worked to highlight living voices through exclusive interviews with the figures who have shaped history. A student expelled from Barnard for living with her boyfriend. Activists who stood in front of bulldozers that threatened to tear apart Morningside Park’s integrity. Tunnelers creeping underground into the most literal subculture of campus life. Indigenous students who in 2022 finally secured their own brownstone after years of advocacy.</p>
+
+                <p>Our present-day map features beautiful artwork from Spectator’s Illustrations team, who collaborated with The Eye to highlight their own favorite places on campus. Colored by these artistic outlooks, the present-day map transposes the archival stories onto the daily reality of campus life. I invite you to explore the maps, peruse the photos and documents from the archives, and dive into the storied legacy that underlies Columbia. Above all, I hope this project gets you thinking about what it means to inhabit this campus and leave your own imprint. As a member of the Columbia community, you are deeply implicated in this issue of space.</p>
+
+                <p>Warmly,</p>
+                </BodyText>
                 <CreditsWrapper>
-                    <Credit>Name</Credit>
-                    <TagLine>Editor in Chief</TagLine>
-                    <Credit>Name</Credit>
-                    <TagLine>Managing Editor</TagLine>
+                    <Credit>Annie Cheng</Credit>
+                    <TagLine>Managing Editor of The Eye & Founder of the Archival Excavation Team</TagLine>
                 </CreditsWrapper>
             </BodyContainer>
         </Container>
