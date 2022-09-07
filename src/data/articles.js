@@ -1,33 +1,33 @@
 export const lenape_articles = [
   {
-    "article_link": "https://www.columbiaspectator.com/eye/",
+    "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/the-lenape-of-manahatta-a-struggle-for-acknowledgement/",
     "article_title": "The Lenape of Manahatta: A Struggle for Acknowledgement",
     "article_authors": "Ann Vettikkal",
-    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/JY4EQCPCIZA4JD3ASOZYSPQEA4.gif",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/T24FKDCMGJAXRHIFA2R52JRCFQ.jpeg",
     "description": "Six years ago, Columbia acknowledged the University’s role in displacing the Lenape for the first time. Searching for the specifics of their displacement in institutional documentation reveals a history of erasure, slavery, and neglect."
   }
 ];
 
 export const morningside_heights_articles = [
   {
-    "article_link": "https://www.columbiaspectator.com/eye/",
+    "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/whats-in-a-name-the-controversies-of-butler-library/",
     "article_title": "What’s in a name? The Controversies of Butler Library",
     "article_authors": "Lilienne Shore Kilgore-Brown",
-    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/JY4EQCPCIZA4JD3ASOZYSPQEA4.gif",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7XQ4QCNJ4JH3HC4WULIPOT44FE.png",
     "description": "Butler Library's contemporary controversies have centered on the mostly white and male names on the edifice—but there’s another, darker side to Butler’s history and the man that built it."
   },
   {
-    "article_link": "https://www.columbiaspectator.com/eye/",
+    "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/morningside-park-and-the-people-who-love-it/",
     "article_title": "Morningside Park and the People Who Love It",
     "article_authors": "Isabella Noonen",
-    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/JY4EQCPCIZA4JD3ASOZYSPQEA4.gif",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7XQ4QCNJ4JH3HC4WULIPOT44FE.png",
     "description": "Columbia and Morningside Park have been neighbors for more than a century. It’s never been the easiest relationship."
   },
   {
-    "article_link": "https://www.columbiaspectator.com/eye/",
-    "article_title": "Beyond Closed Doors: Co-ed Living at Columbia",
+    "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/getting-a-room-how-a-barnard-student-transformed-columbias-dorms/",
+    "article_title": "Getting a Room: How a Barnard Student Transformed Columbia’s Dorms",
     "article_authors": "Annie Cheng & Lilienne Shore Kilgore-Brown",
-    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/JY4EQCPCIZA4JD3ASOZYSPQEA4.gif",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/OAQKD4BAERFKLB3RXIKOWMJOF4.jpg",
     "description": "She was expelled from Barnard in 1968 for living with her boyfriend. Read Grace LeClair's story: one that spurred the rapid evolution of Columbia’s residential spaces in the late 20th century."
   },
   {
@@ -55,10 +55,10 @@ export const morningside_heights_articles = [
 
 export const present_day_articles = [
   {
-    "article_link": "https://www.columbiaspectator.com/eye/",
+    "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/the-lenape-of-manahatta-a-struggle-for-acknowledgement/",
     "article_title": "The Lenape of Manahatta: A Struggle for Acknowledgement",
     "article_authors": "Ann Vettikkal",
-    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/JY4EQCPCIZA4JD3ASOZYSPQEA4.gif",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/T24FKDCMGJAXRHIFA2R52JRCFQ.jpeg",
     "description": "Six years ago, Columbia acknowledged the University’s role in displacing the Lenape for the first time. Searching for the specifics of their displacement in institutional documentation reveals a history of erasure, slavery, and neglect."
   },
   {
@@ -76,10 +76,10 @@ export const present_day_articles = [
     "description": "Columbia and Morningside Park have been neighbors for more than a century. It’s never been the easiest relationship."
   },
   {
-    "article_link": "https://www.columbiaspectator.com/eye/",
-    "article_title": "Beyond Closed Doors: Co-ed Living at Columbia",
+    "article_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/getting-a-room-how-a-barnard-student-transformed-columbias-dorms/",
+    "article_title": "Getting a Room: How a Barnard Student Transformed Columbia’s Dorms",
     "article_authors": "Annie Cheng & Lilienne Shore Kilgore-Brown",
-    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/JY4EQCPCIZA4JD3ASOZYSPQEA4.gif",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/OAQKD4BAERFKLB3RXIKOWMJOF4.jpg",
     "description": "She was expelled from Barnard in 1968 for living with her boyfriend. Read Grace LeClair's story: one that spurred the rapid evolution of Columbia’s residential spaces in the late 20th century."
   },
   {
