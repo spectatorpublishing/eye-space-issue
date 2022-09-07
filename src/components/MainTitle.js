@@ -35,12 +35,6 @@ const Title = styled.div`
 const MainTitle = ({ }) => {
     return (
         <Container>
-            {/* <MainImage>
-                <img src = "https://eye-space.s3.amazonaws.com/Main_Image_Placeholder.png" alt = "Main Image" />
-            </MainImage>
-            <Title>
-                <a>THE SPACE ISSUE</a>
-            </Title> */}
             <Title>
                 <a>THE SPACE ISSUE</a>
             </Title> 
