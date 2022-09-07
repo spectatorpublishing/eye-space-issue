@@ -23,7 +23,6 @@ const theme = {
       darkBrown:"#4A2513",
       tan:"#EEE7DF",
       titleBlack: "#4A2513",
-      lightBrown: "#EEE7DF"
     },
     sizes: {
       mobile: "767px",

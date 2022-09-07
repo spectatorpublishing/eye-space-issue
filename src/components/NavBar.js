@@ -40,11 +40,23 @@ const MenuItem = styled.div`
 const EyeLogo = styled.div`
     height: 8rem;
     width: 8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 
     img {
         max-width: 100%;
         height: auto;
     }
+`;
+
+const Sections = styled.div`
+    display: flex;
+    margin-left: 20%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
 `
 
 const NavBar = ({ }) => {
@@ -55,11 +67,13 @@ const NavBar = ({ }) => {
                     <img src="https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/WZKAIDANZVFV5PH57SCIT7XVIE"/>
                 </a>                
             </EyeLogo>
-            {sections.map(section => (
-                <MenuItem current={window.location.pathname === section.url}>
-                    <Link to={section.url}>{section.title}</Link>
-                </MenuItem>
-            ))}
+            <Sections>
+                {sections.map(section => (
+                    <MenuItem current={window.location.pathname === section.url}>
+                        <Link to={section.url}>{section.title}</Link>
+                    </MenuItem>
+                ))}
+            </Sections>
         </Container>
     )
 };

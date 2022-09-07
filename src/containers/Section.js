@@ -46,12 +46,12 @@ const Map = styled.div`
         max-height: 100%;
         max-width: 100%;
         object-fit: cover;
-        max-height: calc(100vh - 6rem);
+        max-height: calc(100vh - 4.5rem);
     }
 
     @media (max-width: 768px) {
         img {
-            max-height: calc(100vh - 16rem);
+            max-height: calc(100vh - 13rem);
         }
     }
 `;
@@ -59,7 +59,7 @@ const Map = styled.div`
 const Articles = styled.div`
     display: flex;
     flex-direction: column;
-    background: ${theme.colors.lightBrown};
+    background-color: ${theme.colors.lightBrown};
     overflow: scroll;
     width: 50rem;
 
