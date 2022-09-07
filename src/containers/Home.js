@@ -6,6 +6,14 @@ import LetterEditor from '../components/LetterEditor';
 import AllArticles from '../components/AllArticles';
 import Credits from '../components/Credits';
 import theme from '../theme';
+import NavBar from '../components/NavBar';
+
+const Wrapper = styled.main`
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+`;
 
 const HomeContainer = styled.div`
     @media only screen and (max-width: 768px){
@@ -15,12 +23,15 @@ const HomeContainer = styled.div`
 
 const Home = ({ }) => {
     return (
-        <HomeContainer>
-            <MainTitle/>
-            <LetterEditor/>
-            <AllArticles/>
-            <Credits/>
-        </HomeContainer>
+        <Wrapper>
+            <NavBar/>
+            <HomeContainer>
+                <MainTitle/>
+                <LetterEditor/>
+                <AllArticles/>
+                <Credits/>
+            </HomeContainer>
+        </Wrapper>
     )
 };
 
