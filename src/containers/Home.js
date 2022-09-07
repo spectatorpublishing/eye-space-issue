@@ -17,9 +17,10 @@ const Wrapper = styled.main`
 `;
 
 const HomeContainer = styled.div`
-    background-color: ${theme.colors.lightBrown};
+    display: flex;
+    flex-direction: column;
+    background-color: ${theme.colors.tan};
     @media only screen and (max-width: 768px){
-
     }
 `;
 
