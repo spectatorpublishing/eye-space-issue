@@ -100,16 +100,24 @@ export const credits = {
         "title": "Deputy Illustrations Editor"
       },
       {
-        "staff_name": "Liza Evseeva",
-        "title": "Deputy Illustrations Editor"
-      },
-      {
-        "staff_name": "Noelle Hunter",
-        "title": "Deputy Illustrations Editor"
-      },
-      {
         "staff_name": "Sadia Sharif",
         "title": "Deputy Illustrations Editor"
+      },
+      {
+        "staff_name": "Ji Yoon Sim",
+        "title": "Deputy Illustrations Editor"
+      },
+      {
+        "staff_name": "Chiara Guigou",
+        "title": "Staff Illustrator"
+      },
+      {
+        "staff_name": "Taylor Yingshi",
+        "title": "Staff Illustrator"
+      },
+      {
+        "staff_name": "Kelsea Petersen",
+        "title": "Staff Illustrator"
       }
     ],
     "Photo": [

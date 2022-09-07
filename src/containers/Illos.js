@@ -44,12 +44,13 @@ const Description = styled.div`
 `
 
 const Illo = ({id, location, image, illustrator, description}) => {
+    let author_first_name = illustrator === "Ji Yoon Sim" ? "Ji Yoon" : illustrator.split(" ")[0];
     return (
         <IlloWrapper>
             <Location>{location}</Location>
             <Image><img src={image}/></Image>
             <ByLine>Illustration by {illustrator}</ByLine>
-            <Description><span style={{fontWeight: "700"}}>{illustrator.split(" ")[0]}: </span><span>{description}</span></Description>
+            <Description><span style={{fontWeight: "700"}}>{author_first_name}: </span><span>{description}</span></Description>
         </IlloWrapper>
     );
 }
