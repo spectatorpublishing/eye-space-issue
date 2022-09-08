@@ -11,7 +11,7 @@ const Container = styled.div`
     margin: auto;
     height: 65rem;
 
-    background:url(https://eye-space.s3.amazonaws.com/Main_Image_Placeholder.png);
+    background:url(https://cloudfront-us-east-1.images.arcpublishing.com/spectator/6Z6JL5A2OREHXI6IO444H5TTXY.gif);
     background-size: cover;
     background-position: center;
 
@@ -25,6 +25,8 @@ const Container = styled.div`
 const Title = styled.div`
     display: flex;
     padding-top: 20rem;
+    text-shadow: 2px 2px ${theme.colors.tan};
+
     a {
         color: ${theme.colors.darkBrown};
         font-family: "Libre Baskerville";
