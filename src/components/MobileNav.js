@@ -130,7 +130,7 @@ const MobileNav = ({ }) => {
 
             <Menu isOpen={open} width={'100vw'} styles={styles}>
                 {sections.map(section => (
-                    <MenuItem current={window.location.pathname === section.url} >
+                    <MenuItem current={window.location.pathname === section.url} onClick={() => handleClick()}>
                         <Link to={section.url}>{section.title}</Link>
                     </MenuItem>
                 ))}    
