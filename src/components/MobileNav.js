@@ -39,9 +39,6 @@ const MenuItem = styled.div`
 `;
 
 const EyeLogo = styled.div`
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: 1000;
     height: 5rem;
     width: 5rem;
@@ -62,7 +59,6 @@ const CurrentTab = styled.div`
     font-family: "Libre Baskerville";
     font-size: 1.25rem;
     padding-top: 0.75rem;
-    margin-left: 6rem;
 `;
 
 const MobileNav = ({ }) => {
@@ -72,6 +68,28 @@ const MobileNav = ({ }) => {
     function handleClick() {
         setOpen(!open)
     }
+
+    // to fix bug where menu opens where clicking anywhere, style burger
+    // but we want to use the other hamburger's icon so make these transparent
+    var styles = {
+        bmBurgerButton: {
+          position: 'fixed',
+          width: '0px',
+          height: '0px',
+          right: '1rem',
+          top: '1rem'
+        },
+        bmBurgerBars: {
+          background: '#00000000'
+        },
+        bmCrossButton: {
+          width: '0px',
+          height: '0px',
+        },
+        bmCross: {
+          background: '#00000000'
+        },
+      }
 
     return (
         <Container>
@@ -92,7 +110,6 @@ const MobileNav = ({ }) => {
                     }
                     )      
                 }
-
                 
                 <HamburgerWrapper>
                     <HamburgerMenu
@@ -111,7 +128,7 @@ const MobileNav = ({ }) => {
                 </HamburgerWrapper>
             </TopBar>
 
-            <Menu isOpen={open} width={'100vw'} onClose={handleClick} onOpen={handleClick}>
+            <Menu isOpen={open} width={'100vw'} styles={styles}>
                 {sections.map(section => (
                     <MenuItem current={window.location.pathname === section.url} >
                         <Link to={section.url}>{section.title}</Link>

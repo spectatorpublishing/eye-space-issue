@@ -25,6 +25,7 @@ const Container = styled.div`
 const Title = styled.div`
     display: flex;
     padding-top: 20rem;
+    text-align: center;
     a {
         color: ${theme.colors.darkBrown};
         font-family: "Libre Baskerville";
