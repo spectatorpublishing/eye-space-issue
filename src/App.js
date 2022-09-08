@@ -22,7 +22,7 @@ const App = () => {
               articles={lenape_articles} 
               map_url={"https://eye-space.s3.amazonaws.com/Lenape+Land+Map.png"}
               pins={lenape_pins}/>} />
-        <Route path="/off-campus" 
+        <Route path="/morningside-heights" 
           element={
             <Section 
               header="Morningside Heights" 
