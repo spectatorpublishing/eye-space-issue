@@ -1,6 +1,13 @@
 export const illos = [
   {
     "article_link": "",
+    "article_title": "The Space Edition",
+    "article_authors": "Yingjie Wang",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/6Z6JL5A2OREHXI6IO444H5TTXY.gif",
+    "description": ""
+  },
+  {
+    "article_link": "",
     "article_title": "Avery Arches",
     "article_authors": "Kelsea Petersen",
     "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/5226S4HDCRGF5EZEMXHOZ7EITM.JPEG",

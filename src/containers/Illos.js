@@ -50,7 +50,7 @@ const Illo = ({id, location, image, illustrator, description}) => {
             <Location>{location}</Location>
             <Image><img src={image}/></Image>
             <ByLine>Illustration by {illustrator}</ByLine>
-            <Description><span style={{fontWeight: "700"}}>{author_first_name}: </span><span>{description}</span></Description>
+            {description !== "" && <Description><span style={{fontWeight: "700"}}>{author_first_name}: </span><span>{description}</span></Description>}
         </IlloWrapper>
     );
 }
