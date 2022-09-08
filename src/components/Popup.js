@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import theme from '../theme';
-import { NavHashLink } from 'react-router-hash-link';
 import { HashLink } from 'react-router-hash-link';
 
 const Container = styled.div`
@@ -35,7 +34,7 @@ const Triangle = styled.div`
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     z-index: 200;
-    left: 15rem;
+    left: 16rem;
     transform: translate(-50%,0%); // anchor point at bottom of pin
     @media (max-width: 768px) {
         display: none;
@@ -130,7 +129,7 @@ const Popup = ({ link, title, author, image, description, isIllo, top, left}) =>
                             <Author>{author}</Author>
                             <Description>{description}</Description>
                         </Text>
-                        <Triangle position={popup_postition === "bottom" ? "" : ""} style={popup_postition === "bottom" ? {bottom: "15rem",  borderBottom: "20px solid white"} : {top: "15rem",  borderTop: "20px solid white"}}/>
+                        <Triangle style={popup_postition === "bottom" ? {bottom: "15rem",  borderBottom: "20px solid white"} : {top: "15rem",  borderTop: "20px solid white"}}/>
                 </Container>
             </HashLink>
             : <a href={link} target="_blank">
@@ -146,7 +145,7 @@ const Popup = ({ link, title, author, image, description, isIllo, top, left}) =>
                             <Author>{author}</Author>
                             <Description>{description}</Description>
                         </Text>
-                        <Triangle position={popup_postition === "bottom" ? "" : ""} style={popup_postition === "bottom" ? {bottom: "15rem",  borderBottom: "20px solid white"} : {top: "15rem",  borderTop: "20px solid white"}}/>
+                        <Triangle style={popup_postition === "bottom" ? {bottom: "15rem",  borderBottom: "20px solid white"} : {top: "15rem",  borderTop: "20px solid white"}}/>
                 </Container>
             </a>}
         </Wrapper>

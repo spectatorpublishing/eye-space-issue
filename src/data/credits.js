@@ -10,6 +10,18 @@ export const credits = {
           "title": "Head of Engineering"
         },
         {
+          "staff_name": "Yu-Chen Huang",
+          "title": "Engineering Manager"
+        },
+        {
+          "staff_name": "Francesca Cavuoti",
+          "title": "Engineering Manager"
+        },
+        {
+          "staff_name": "Cindy Zhu",
+          "title": "Engineering Manager"
+        },
+        {
           "staff_name": "Philippe Wu",
           "title": "Head of Product"
         },
@@ -88,80 +100,40 @@ export const credits = {
         "title": "Deputy Illustrations Editor"
       },
       {
-        "staff_name": "Liza Evseeva",
-        "title": "Deputy Illustrations Editor"
-      },
-      {
-        "staff_name": "Noelle Hunter",
-        "title": "Deputy Illustrations Editor"
-      },
-      {
         "staff_name": "Sadia Sharif",
         "title": "Deputy Illustrations Editor"
+      },
+      {
+        "staff_name": "Ji Yoon Sim",
+        "title": "Deputy Illustrations Editor"
+      },
+      {
+        "staff_name": "Chiara Guigou",
+        "title": "Staff Illustrator"
+      },
+      {
+        "staff_name": "Taylor Yingshi",
+        "title": "Staff Illustrator"
+      },
+      {
+        "staff_name": "Kelsea Petersen",
+        "title": "Staff Illustrator"
       }
     ],
     "Photo": [
       {
         "staff_name": "Millie Felder",
         "title": "Photo Editor"
-      },
-      {
-        "staff_name": "Kate Della Pietra",
-        "title": "Deputy Photo Editor"
-      },
-      {
-        "staff_name": "Samantha Camacho",
-        "title": "Deputy Photo Editor"
-      },
-      {
-        "staff_name": "Alex Kieu",
-        "title": "Deputy Photo Editor"
-      },
-      {
-        "staff_name": "Kat St. Martin",
-        "title": "Deputy Photo Editor"
-      },
-      {
-        "staff_name": "Beatrice Shlansky",
-        "title": "Senior Staff Photographer"
-      },
-      {
-        "staff_name": "Rommel Nunez",
-        "title": "Senior Staff Photographer"
-      },
-      {
-        "staff_name": "Soleil Guevara",
-        "title": "Staff Photographer"
-      },
-      {
-        "staff_name": "Judy Goldstein",
-        "title": "Staff Photographer"
-      },
-      {
-        "staff_name": "Ryan Newberger",
-        "title": "Staff Photographer"
-      },
-      {
-        "staff_name": "Caitlin Buckley",
-        "title": "Staff Photographer"
-      },
-      {
-        "staff_name": "Margaret Maguire",
-        "title": "Staff Photographer"
-      },
-      {
-        "staff_name": "Yash Mangalick",
-        "title": "Staff Photographer"
-      },
-      {
-        "staff_name": "Jane Mok",
-        "title": "Staff Photographer"
       }
     ],
     "Copy": [
       {
-        "staff_name": "Kaylene Su Yee Chong",
+        "staff_name": "Olivia Vella",
         "title": "Head Copy Editor"
+      },
+      {
+        "staff_name": "Kaylene Su Yee Chong",
+        "title": "Deputy Copy Editor"
       },
       {
         "staff_name": "Katherine Carraway",
@@ -172,15 +144,7 @@ export const credits = {
         "title": "Deputy Copy Editor"
       },
       {
-        "staff_name": "Robyn Fohouo",
-        "title": "Deputy Copy Editor"
-      },
-      {
         "staff_name": "Maria Levit",
-        "title": "Deputy Copy Editor"
-      },
-      {
-        "staff_name": "Jonah Pitkowsky",
         "title": "Deputy Copy Editor"
       },
       {
@@ -195,9 +159,5 @@ export const credits = {
         "staff_name": "Ronit Dhulia",
         "title": "Deputy Copy Editor"
       },
-      {
-        "staff_name": "Emily Stone",
-        "title": "Preslotter"
-      }
     ],
 };

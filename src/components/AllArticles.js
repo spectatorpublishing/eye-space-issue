@@ -3,6 +3,7 @@ import styled from 'styled-components/macro';
 import { device } from '../device';
 import theme from '../theme';
 import { present_day_articles } from '../data/articles';
+import { HashLink } from 'react-router-hash-link';
 
 const ArticlesContainer = styled.div`
     display: grid;
@@ -42,6 +43,11 @@ const Wrapper = styled.div`
     }
 
     margin: 1rem;
+    transition: transform .2s;
+
+    :hover{
+        transform: scale(1.05);
+    }
 `;
 
 const Image = styled.div`
@@ -74,11 +80,10 @@ const Text = styled.div`
         color: white;
         text-align: center;
         margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
+        margin-right: auto;
+        left: 0;
+        right: 0;
         z-index: 5;
-        left: 10%;
 
     @media only screen and (max-width: ${theme.sizes.mobile}){
         width: 15rem;
@@ -110,10 +115,11 @@ const Column = styled.div`
     flex-direction: column;
 `;
 
-const Article = ({ link, image, title, author }) => {
+const Article = ({ link, image, title, author, isIllo }) => {
     return (
         <Wrapper>
-            <a href={link} target="_blank">
+            {isIllo ? 
+            <HashLink smooth to={'/illos#' + title.split(" ")[0]}>
                 <Image>
                     <img src={image} />
                     <Text>
@@ -121,7 +127,16 @@ const Article = ({ link, image, title, author }) => {
                         <Author>{author}</Author>
                     </Text>
                 </Image>
-            </a>
+            </HashLink>
+            : <a href={link} target="_blank">
+                <Image>
+                    <img src={image} />
+                    <Text>
+                        <Title>{title}</Title>
+                        <Author>{author}</Author>
+                    </Text>
+                </Image>
+            </a>}
         </Wrapper>
     )
 };
@@ -132,7 +147,7 @@ const AllArticles = ({ }) => {
         <TitleText>Articles</TitleText>
         <ArticlesContainer>
             {present_day_articles.map(article => (
-                <Article link={article.article_link} image={article.image_url} title={article.article_title} author={article.article_authors} />
+                <Article link={article.article_link} image={article.image_url} title={article.article_title} author={article.article_authors} isIllo={article.isIllo}/>
             ))}
         </ArticlesContainer>
         </>

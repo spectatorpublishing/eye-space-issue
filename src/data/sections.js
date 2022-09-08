@@ -9,8 +9,8 @@ export const sections = [
         url: "/lenape-land",
     },
     {
-        title: "Off Campus",
-        url: "/off-campus",
+        title: "Morningside Heights",
+        url: "/morningside-heights",
     },
     {
         title: "Present Day",
